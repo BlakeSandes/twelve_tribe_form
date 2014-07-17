@@ -16,14 +16,19 @@ nav {
       margin: 0 3px;
       padding-top: 4px;
       border-radius: 8px 3px 0 0;
-      @extend %hoverStyle;
+      
       @extend %fontStyle;
+      @extend %buttonStyle;
       &:first-child {
         margin-left: 8%;
       }
       &:hover {
         @extend %fontStyle;
-        @extend %buttonStyle; 
+        @extend %hoverStyle;
+      }
+      &:focus {
+        @extend %fontStyle;
+        @extend %buttonStyle;
       }
     }
       

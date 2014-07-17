@@ -46,29 +46,16 @@
     color: rgba(66,108,130,1);
     text-shadow: 1px 1px 1px rgba(255,255,255,.75);
   }
-  input {
+  .loginOptions input, .signHide input {
     display: block;
     width: 75%;
     height: 2em;
     margin: 0 auto;
     padding-left: 12px;
-    color: rgba(62,35,76,.85);
-    
-    background: -webkit-linear-gradient(rgba(255, 255, 255,.90) 40%, rgba(255, 255, 255,.65) 60%);
-    background: -o-linear-gradient(rgba(255, 255, 255,.90) 40%, rgba(255, 255, 255,.65) 60%);
-    background: linear-gradient(rgba(255, 255, 255,.90) 40%, rgba(255, 255, 255,.65) 60%);
-        
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-
-    box-shadow: .5px .5px 1.5px rgba(94,153,184,.75),
-                -.5px -.5px 1.5px rgba(94,153,184,.75);
+    @extend %inputStyle;
     
     &:focus {
-      outline: none;
-      box-shadow: 0px 0px 12px rgba(2,247,49,1),
-                  inset 0px 0px 6px rgba(103,255,39,1);
+      @extend %focusStyle;
 
     }
   } 

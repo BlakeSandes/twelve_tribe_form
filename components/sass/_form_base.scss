@@ -62,14 +62,16 @@
   }
 }
 
-button {
+.button {
+  
   @extend %fontStyle;
   @extend %buttonStyle;
-  width: 96px;
+  width: 72px;
   padding: 4px;
   float: right;
-  margin: 24px 48px 0 0;
+  margin: 24px 48px 100% 0;
   &:hover {
+    @extend %fontStyle;
     @extend %hoverStyle;
   }
 }

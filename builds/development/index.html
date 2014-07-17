@@ -1,464 +1,463 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Default Really</title> -->
+<head>
+  <meta charset="utf-8">
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Default Really</title> -->
 
-    <!-- Add to homescreen for Chrome on Android 
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="196x196" href="images/touch/chrome-touch-icon-196x196.png">-->
+  <!-- Add to homescreen for Chrome on Android 
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="196x196" href="images/touch/chrome-touch-icon-196x196.png">-->
 
-    <!-- Add to homescreen for Safari on iOS -->
-    
-    <!--<meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content=""> -->
+  <!-- Add to homescreen for Safari on iOS -->
+  
+  <!--<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content=""> -->
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    
-    <!--<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF"> -->
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  
+  <!--<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF"> -->
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <!--<link rel="canonical" href="http://www.example.com/">
-    -->
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!-- <link rel="canonical" href="http://www.example.com/">
+  -->
 
-    <!-- build:css styles/components/main.min.css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
-  </head>
-  <nav>
-    <ul>
-      <li class="logtab">Login</li>
-      <li class="gentab ">Gender</li>
-      <li class="tribetab hidden">Tribes</li>
-    </ul>
-  </nav>
-  <body>
-    <form class="form" action="" class="clearfix">
-      <fieldset class="login" title="Login">
-        <legend>Login Info</legend>
-        <ol class="loginOptions">
-          <li>
-            <label for="name">Username*</label>
-            <input type="text" placeholder="First  Last" id="name">
-          </li>
-          <li>
-            <label for="password">Password*</label>
-            <input type="password" id="password" placeholder="" maxlength="16" required>
-          </li>
-        </ol>
-        <div class="logsign">
-          <span class="signupbtn">Sign Up</span>
-          <span class="loginbtn">Login</span>  
-        </div>
-        <ol class="signHide">
-          <li>
-            <label for="email">Email</label> 
-            <input type="email" id="email">
-          </li>
-          <li>
-            <label for="telephone">Telephone</label>
-            <input type="telephone" id="telephone">
-          </li>
-          <li>
-            <label for="website">Website</label>
-            <input type="url" id="website">
-          </li>
-        </ol>
-      </fieldset>
-      <fieldset class="gender hiddenField" title="Gender Info">
-        <legend>Gender Info</legend>
-        <h3 class="infoheader">Type</h3>
-        <ol class="type">
-          <li>
-            <input type="radio" name="sex orientation" value="female" id="female">
-            <label for="female">Female</label>
-          </li>
-          <li>
-            <input type="radio" name="sex orientation" value="male" id="male">
-            <label for="male">Male</label>
-          </li>
-          <li>
-            <input type="radio" name="sex orientation" value="androgynous" id="androgynous">
-            <label for="androgynous">Androgynous</label>
-          </li>
-          <li>
-            <input type="radio" name="sex orientation" value="no interest" id="orinterest">
-            <label for="orinterest">No Interest</label>
-          </li>
-        </ol>
-        <h3 class="infoheader">Orientation</h3>
-        <ol class="orientation">
-          <li>
-            <input type="radio" id="heterotype" name="sex type" value="heterosexual">
-            <label for="heterotype">Heterosexual</label>
-          </li>
-          <li>  
-            <input type="radio" id="homotype" name="sex type" value="heterosexual">
-            <label for="homotype">Homosexual</label>
-          </li>
-          <li>
-            <input type="radio" id="bitype" name="sex type" value="bisexual">
-            <label for="bitype">Bisexual</label>
-          </li>
-          <li>
-            <input type="radio" id="atype" name="sex type" value="asexual">
-            <label for="atype">Asexual</label>
-          </li>
-          <li>
-            <input type="radio" id="typeinterest" name="sex type" value="no interest">
-            <label for="typeinterest">No Interest</label>
-          </li>
-        </ol>
-        <h3 class="infoheader">Comments</h3>
-        <textarea id="comments" class="common" placeholder="Share your thoughts if you feel so inclined!"></textarea>
-      </fieldset>
-      <fieldset class="tribes hiddenField"  title="Twelve Tribe Info">
-        <legend>Twelve Tribe Info</legend>
-        <div class="tribehead">
-          <span class="tribetitle">Isutu-Esheau<br/>(I sU' too- E' shoo)</span>
-          <span class="tribeorb">1</span>
-        </div>
-        <ol>
-          <li id="tribe1" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe1 mix" value="tribe1 race1">Tribe1 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe1 mix" value="tribe1 race2">Tribe1 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe1 mix" value="tribe1 race3">Tribe1 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe1 mix" value="tribe1 race4">Tribe1 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe1 mix" value="tribe1 race5">Tribe1 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe1 mix" value="tribe1 race6">Tribe1 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Maahali-Bruea<br/>(Ma a ha' LE-BrU' A)</span>
-          <span class="tribeorb">2</span>
-        </div>
-        <ol>
-          <li id="tribe2" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe2 mix" value="tribe2 race1">Tribe2 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe2 mix" value="tribe2 race2">Tribe2 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe2 mix" value="tribe2 race3">Tribe2 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe2 mix" value="tribe2 race4">Tribe2 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe2 mix" value="tribe2 race5">Tribe2 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe2 mix" value="tribe2 race6">Tribe2 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Amekasan-Etur<br/>(a ME' ka sun-e too'r)</span>
-          <span class="tribeorb">3</span>
-        </div>
-        <ol>
-          <li id="tribe3" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe3 mix" value="tribe3 race1">Tribe3 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe3 mix" value="tribe3 race2">Tribe3 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe3 mix" value="tribe3 race3">Tribe3 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe3 mix" value="tribe3 race4">Tribe3 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe3 mix" value="tribe3 race5">Tribe3 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe3 mix" value="tribe3 race6">Tribe3 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Nuagu Hali<br/>(Noo ah' goo- ha' LE)</span>
-          <span class="tribeorb">4</span>
-        </div>
-        <ol>
-          <li id="tribe4" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe4 mix" value="tribe4 race1">Tribe4 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe4 mix" value="tribe4 race2">Tribe4 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe4 mix" value="tribe4 race3">Tribe4 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe4 mix" value="tribe4 race4">Tribe4 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe4 mix" value="tribe4 race5">Tribe4 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe4 mix" value="tribe4 race6">Tribe4 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Ionatu-Etillah<br/>(I O'Na too- et il' a)</span>
-          <span class="tribeorb">5</span>
-        </div>
-        <ol>
-          <li id="tribe5" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe5 mix" value="tribe5 race1">Tribe5 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe5 mix" value="tribe5 race2">Tribe5 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe5 mix" value="tribe5 race3">Tribe5 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe5 mix" value="tribe5 race4">Tribe5 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe5 mix" value="tribe5 race5">Tribe5 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe5 mix" value="tribe5 race6">Tribe5 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Tamyana-Shridveta<br/>(Rah ma yah' na-shrid vE' Da)</span>
-          <span class="tribeorb">6</span>
-        </div>
-        <ol>
-          <li id="tribe6" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe6 mix" value="tribe6 race1">Tribe6 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe6 mix" value="tribe6 race2">Tribe6 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe6 mix" value="tribe6 race3">Tribe6 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe6 mix" value="tribe6 race4">Tribe6 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe6 mix" value="tribe6 race5">Tribe6 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe6 mix" value="tribe6 race6">Tribe6 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Mahata-Agrah<br/>(ME hah' ta- a'g-ra)</span>
-          <span class="tribeorb">7</span>
-        </div>
-        <ol>
-          <li id="tribe7" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe7 mix" value="tribe7 race1">Tribe7 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe7 mix" value="tribe7 race2">Tribe7 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe7 mix" value="tribe7 race3">Tribe7 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe7 mix" value="tribe7 race4">Tribe7 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe7 mix" value="tribe7 race5">Tribe7 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe7 mix" value="tribe7 race6">Tribe7 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Chia Zhun Zan La-Yung<br/>(ChE' ah-Zoon-Yah LA-Yoong')</span>
-          <span class="tribeorb">8</span>
-        </div>
-        <ol>
-          <li id="tribe8" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe8 mix" value="tribe8 race1">Tribe8 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe8 mix" value="tribe8 race2">Tribe8 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe8 mix" value="tribe8 race3">Tribe8 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe8 mix" value="tribe8 race4">Tribe8 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe8 mix" value="tribe8 race5">Tribe8 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe8 mix" value="tribe8 race6">Tribe8 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Yun Zu-Xen<br/>(Yu-Un Zoo-Zen)</span>
-          <span class="tribeorb">9</span>
-        </div>
-        <ol>
-          <li id="tribe9" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe9 mix" value="tribe9 race1">Tribe9 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe9 mix" value="tribe9 race2">Tribe9 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe9 mix" value="tribe9 race3">Tribe9 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe9 mix" value="tribe9 race4">Tribe9 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe9 mix" value="tribe9 race5">Tribe9 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe9 mix" value="tribe9 race6">Tribe9 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Ma'-ah-hu-ta<br/>(Ma-a-hoo' ta)</span>
-          <span class="tribeorb">10</span>
-        </div>
-        <ol>
-          <li id="tribe10" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe10 mix" value="tribe10 race1">Tribe10 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe10 mix" value="tribe10 race2">Tribe10 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe10 mix" value="tribe10 race3">Tribe10 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe10 mix" value="tribe10 race4">Tribe10 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe10 mix" value="tribe10 race5">Tribe10 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe10 mix" value="tribe10 race6">Tribe10 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">Zephar-Duun-Atur<br/>(Ze-far-Doon a-Tur)</span>
-          <span class="tribeorb">11</span>
-        </div>
-        <ol>
-         <li id="tribe11" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe11 mix" value="tribe11 race1">Tribe11 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe11 mix" value="tribe11 race2">Tribe11 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe11 mix" value="tribe11 race3">Tribe11 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe11 mix" value="tribe11 race4">Tribe11 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe11 mix" value="tribe11 race5">Tribe11 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe11 mix" value="tribe11 race6">Tribe11 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-        <div class="tribehead">
-          <span class="tribetitle">A-reah-Azurta<br/>(A-RI-a Zoor'-ta)</span>
-          <span class="tribeorb">12</span>
-        </div>
-        <ol>
-          <li id="tribe12" class="hidden clearfix">
-            <ol>
-              <li>
-                <label><input type="checkbox" name="tribe12 mix" value="tribe12 race1">Tribe12 Race Choice1</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe12 mix" value="tribe12 race2">Tribe12 Race Choice2</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe12 mix" value="tribe12 race3">Tribe12 Race Choice3</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe12 mix" value="tribe12 race4">Tribe12 Race Choice4</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe12 mix" value="tribe12 race5">Tribe12 Race Choice5</label>
-              </li>
-              <li>
-                <label><input type="checkbox" name="tribe12 mix" value="tribe12 race6">Tribe12 Race Choice6</label>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </fieldset>
-      <button type="submit" value="go">Engage!</button>
-    </form>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- build:css styles/components/main.min.css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
+</head>
+<nav>
+  <ul>
+    <li class="logtab">Login</li>
+    <li class="gentab ">Gender</li>
+    <li class="tribetab hidden">Tribes</li>
+  </ul>
+</nav>
+<body>
+  <form class="form" action="" class="clearfix">
+    <fieldset class="login" title="Login">
+      <legend>Login Info</legend>
+      <ol class="loginOptions">
+        <li>
+          <label for="name">Username*</label>
+          <input type="text" placeholder="First  Last" id="name" required>
+        </li>
+        <li>
+          <label for="password">Password*</label>
+          <input type="password" id="password" placeholder="" maxlength="16" required>
+        </li>
+      </ol>
+      <div class="logsign">
+        <span class="signupbtn">Sign Up</span>
+        <span class="loginbtn">Login</span>  
+      </div>
+      <ol class="signHide">
+        <li>
+          <label for="email">Email</label> 
+          <input type="email" id="email">
+        </li>
+        <li>
+          <label for="telephone">Telephone</label>
+          <input type="telephone" id="telephone">
+        </li>
+        <li>
+          <label for="website">Website</label>
+          <input type="url" id="website">
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset class="gender hiddenField" title="Gender Info">
+      <legend>Gender Info</legend>
+      <h3 class="infoheader">Type</h3>
+      <ol class="type">
+        <li>
+          <input type="radio" name="sex orientation" value="female" id="female">
+          <label for="female">Female</label>
+        </li>
+        <li>
+          <input type="radio" name="sex orientation" value="male" id="male">
+          <label for="male">Male</label>
+        </li>
+        <li>
+          <input type="radio" name="sex orientation" value="androgynous" id="androgynous">
+          <label for="androgynous">Androgynous</label>
+        </li>
+        <li>
+          <input type="radio" name="sex orientation" value="no interest" id="orinterest">
+          <label for="orinterest">No Interest</label>
+        </li>
+      </ol>
+      <h3 class="infoheader">Orientation</h3>
+      <ol class="orientation">
+        <li>
+          <input type="radio" id="heterotype" name="sex type" value="heterosexual">
+          <label for="heterotype">Heterosexual</label>
+        </li>
+        <li>  
+          <input type="radio" id="homotype" name="sex type" value="heterosexual">
+          <label for="homotype">Homosexual</label>
+        </li>
+        <li>
+          <input type="radio" id="bitype" name="sex type" value="bisexual">
+          <label for="bitype">Bisexual</label>
+        </li>
+        <li>
+          <input type="radio" id="atype" name="sex type" value="asexual">
+          <label for="atype">Asexual</label>
+        </li>
+        <li>
+          <input type="radio" id="typeinterest" name="sex type" value="no interest">
+          <label for="typeinterest">No Interest</label>
+        </li>
+      </ol>
+      <h3 class="infoheader">Comments</h3>
+      <textarea id="comments" class="common" placeholder="Share your thoughts if you feel so inclined!"></textarea>
+    </fieldset>
+    <fieldset class="tribes hiddenField"  title="Twelve Tribe Info">
+      <legend>Twelve Tribe Info</legend>
+      <div class="tribehead">
+        <span class="tribetitle">Isutu-Esheau<br/>(I sU' too- E' shoo)</span>
+        <span class="tribeorb">1</span>
+      </div>
+      <ol>
+        <li id="tribe1" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe1 mix" value="tribe1 race1">Tribe1 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe1 mix" value="tribe1 race2">Tribe1 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe1 mix" value="tribe1 race3">Tribe1 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe1 mix" value="tribe1 race4">Tribe1 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe1 mix" value="tribe1 race5">Tribe1 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe1 mix" value="tribe1 race6">Tribe1 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Maahali-Bruea<br/>(Ma a ha' LE-BrU' A)</span>
+        <span class="tribeorb">2</span>
+      </div>
+      <ol>
+        <li id="tribe2" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe2 mix" value="tribe2 race1">Tribe2 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe2 mix" value="tribe2 race2">Tribe2 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe2 mix" value="tribe2 race3">Tribe2 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe2 mix" value="tribe2 race4">Tribe2 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe2 mix" value="tribe2 race5">Tribe2 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe2 mix" value="tribe2 race6">Tribe2 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Amekasan-Etur<br/>(a ME' ka sun-e too'r)</span>
+        <span class="tribeorb">3</span>
+      </div>
+      <ol>
+        <li id="tribe3" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe3 mix" value="tribe3 race1">Tribe3 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe3 mix" value="tribe3 race2">Tribe3 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe3 mix" value="tribe3 race3">Tribe3 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe3 mix" value="tribe3 race4">Tribe3 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe3 mix" value="tribe3 race5">Tribe3 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe3 mix" value="tribe3 race6">Tribe3 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Nuagu Hali<br/>(Noo ah' goo- ha' LE)</span>
+        <span class="tribeorb">4</span>
+      </div>
+      <ol>
+        <li id="tribe4" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe4 mix" value="tribe4 race1">Tribe4 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe4 mix" value="tribe4 race2">Tribe4 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe4 mix" value="tribe4 race3">Tribe4 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe4 mix" value="tribe4 race4">Tribe4 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe4 mix" value="tribe4 race5">Tribe4 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe4 mix" value="tribe4 race6">Tribe4 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Ionatu-Etillah<br/>(I O'Na too- et il' a)</span>
+        <span class="tribeorb">5</span>
+      </div>
+      <ol>
+        <li id="tribe5" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe5 mix" value="tribe5 race1">Tribe5 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe5 mix" value="tribe5 race2">Tribe5 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe5 mix" value="tribe5 race3">Tribe5 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe5 mix" value="tribe5 race4">Tribe5 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe5 mix" value="tribe5 race5">Tribe5 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe5 mix" value="tribe5 race6">Tribe5 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Tamyana-Shridveta<br/>(Rah ma yah' na-shrid vE' Da)</span>
+        <span class="tribeorb">6</span>
+      </div>
+      <ol>
+        <li id="tribe6" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe6 mix" value="tribe6 race1">Tribe6 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe6 mix" value="tribe6 race2">Tribe6 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe6 mix" value="tribe6 race3">Tribe6 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe6 mix" value="tribe6 race4">Tribe6 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe6 mix" value="tribe6 race5">Tribe6 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe6 mix" value="tribe6 race6">Tribe6 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Mahata-Agrah<br/>(ME hah' ta- a'g-ra)</span>
+        <span class="tribeorb">7</span>
+      </div>
+      <ol>
+        <li id="tribe7" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe7 mix" value="tribe7 race1">Tribe7 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe7 mix" value="tribe7 race2">Tribe7 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe7 mix" value="tribe7 race3">Tribe7 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe7 mix" value="tribe7 race4">Tribe7 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe7 mix" value="tribe7 race5">Tribe7 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe7 mix" value="tribe7 race6">Tribe7 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Chia Zhun Zan La-Yung<br/>(ChE' ah-Zoon-Yah LA-Yoong')</span>
+        <span class="tribeorb">8</span>
+      </div>
+      <ol>
+        <li id="tribe8" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe8 mix" value="tribe8 race1">Tribe8 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe8 mix" value="tribe8 race2">Tribe8 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe8 mix" value="tribe8 race3">Tribe8 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe8 mix" value="tribe8 race4">Tribe8 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe8 mix" value="tribe8 race5">Tribe8 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe8 mix" value="tribe8 race6">Tribe8 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Yun Zu-Xen<br/>(Yu-Un Zoo-Zen)</span>
+        <span class="tribeorb">9</span>
+      </div>
+      <ol>
+        <li id="tribe9" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe9 mix" value="tribe9 race1">Tribe9 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe9 mix" value="tribe9 race2">Tribe9 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe9 mix" value="tribe9 race3">Tribe9 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe9 mix" value="tribe9 race4">Tribe9 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe9 mix" value="tribe9 race5">Tribe9 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe9 mix" value="tribe9 race6">Tribe9 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Ma'-ah-hu-ta<br/>(Ma-a-hoo' ta)</span>
+        <span class="tribeorb">10</span>
+      </div>
+      <ol>
+        <li id="tribe10" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe10 mix" value="tribe10 race1">Tribe10 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe10 mix" value="tribe10 race2">Tribe10 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe10 mix" value="tribe10 race3">Tribe10 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe10 mix" value="tribe10 race4">Tribe10 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe10 mix" value="tribe10 race5">Tribe10 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe10 mix" value="tribe10 race6">Tribe10 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">Zephar-Duun-Atur<br/>(Ze-far-Doon a-Tur)</span>
+        <span class="tribeorb">11</span>
+      </div>
+      <ol>
+       <li id="tribe11" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe11 mix" value="tribe11 race1">Tribe11 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe11 mix" value="tribe11 race2">Tribe11 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe11 mix" value="tribe11 race3">Tribe11 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe11 mix" value="tribe11 race4">Tribe11 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe11 mix" value="tribe11 race5">Tribe11 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe11 mix" value="tribe11 race6">Tribe11 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <div class="tribehead">
+        <span class="tribetitle">A-reah-Azurta<br/>(A-RI-a Zoor'-ta)</span>
+        <span class="tribeorb">12</span>
+      </div>
+      <ol>
+        <li id="tribe12" class="hiddenTribe clearfix">
+          <ol>
+            <li>
+              <label><input type="checkbox" name="tribe12 mix" value="tribe12 race1">Tribe12 Race Choice1</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe12 mix" value="tribe12 race2">Tribe12 Race Choice2</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe12 mix" value="tribe12 race3">Tribe12 Race Choice3</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe12 mix" value="tribe12 race4">Tribe12 Race Choice4</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe12 mix" value="tribe12 race5">Tribe12 Race Choice5</label>
+            </li>
+            <li>
+              <label><input type="checkbox" name="tribe12 mix" value="tribe12 race6">Tribe12 Race Choice6</label>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </fieldset>
+    <button type="submit" class="button" value="go">Engage!</button>
+  </form>
+  <script src="js/script.js"></script>
+</body>
 </html>
