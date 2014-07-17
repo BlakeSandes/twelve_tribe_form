@@ -1,0 +1,32 @@
+
+nav {
+  ul {
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0;
+    
+    li {
+      list-style: none;
+      width: 84px;
+      display: inline-block;
+      text-align: center;
+      margin: 0 3px;
+      padding-top: 4px;
+      border-radius: 8px 3px 0 0;
+      @extend %hoverStyle;
+      @extend %fontStyle;
+      &:first-child {
+        margin-left: 8%;
+      }
+      &:hover {
+        @extend %fontStyle;
+        @extend %buttonStyle; 
+      }
+    }
+      
+  }  
+}
+  

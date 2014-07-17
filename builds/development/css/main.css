@@ -1,0 +1,654 @@
+/* line 46, ../components/sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 62, ../components/sass/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 75, ../components/sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 85, ../components/sass/_normalize.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 98, ../components/sass/_normalize.scss */
+html {
+  background: white;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 110, ../components/sass/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 120, ../components/sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 133, ../components/sass/_normalize.scss */
+a {
+  background: transparent;
+}
+/* line 140, ../components/sass/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 146, ../components/sass/_normalize.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 160, ../components/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 165, ../components/sass/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 170, ../components/sass/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 175, ../components/sass/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 180, ../components/sass/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 185, ../components/sass/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 193, ../components/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 199, ../components/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 212, ../components/sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 218, ../components/sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 234, ../components/sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 247, ../components/sass/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 255, ../components/sass/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 270, ../components/sass/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 278, ../components/sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 285, ../components/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 293, ../components/sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 297, ../components/sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 349, ../components/sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 358, ../components/sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 368, ../components/sass/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 385, ../components/sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 396, ../components/sass/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 410, ../components/sass/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* line 425, ../components/sass/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 435, ../components/sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 448, ../components/sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 461, ../components/sass/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 471, ../components/sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 484, ../components/sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 494, ../components/sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 503, ../components/sass/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 512, ../components/sass/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 523, ../components/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Core partials====*/
+/* line 2, ../components/sass/_mixins.scss */
+nav ul li:hover, #login .logsign .loginbtn, #login .logsign .signupbtn, nav ul li, .form fieldset:before, #login .logsign .loginbtn:hover, #login .logsign .signupbtn:hover {
+  font-weight: bold;
+  font-size: 1.13em;
+  color: rgba(68, 110, 133, 0.95);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+/* line 9, ../components/sass/_mixins.scss */
+nav ul li:hover, #login .logsign .loginbtn, #login .logsign .signupbtn {
+  border: 0.98px solid rgba(255, 255, 255, 0.12);
+  -webkit-box-shadow: inset 0 0 4px rgba(94, 153, 184, 0.5), 0 0 1px 1.5px rgba(94, 153, 184, 0.95);
+          box-shadow: inset 0 0 4px rgba(94, 153, 184, 0.5), 0 0 1px 1.5px rgba(94, 153, 184, 0.95);
+  background: -webkit-radial-gradient(circle, #5e99b8 12%, transparent);
+  background: -webkit-radial-gradient(circle, #ffffff 12%, rgba(0, 0, 0, 0));
+  background: radial-gradient(circle, #ffffff 12%, rgba(0, 0, 0, 0));
+  background-color: #5e99b8;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+/* line 29, ../components/sass/_mixins.scss */
+nav ul li, #login .logsign .loginbtn:hover, #login .logsign .signupbtn:hover {
+  cursor: pointer;
+  background: -webkit-radial-gradient(rgba(0, 254, 180, 0.95), transparent);
+  background: -webkit-radial-gradient(rgba(0, 254, 180, 0.95), rgba(0, 0, 0, 0));
+  background: radial-gradient(rgba(0, 254, 180, 0.95), rgba(0, 0, 0, 0));
+  background-color: rgba(0, 254, 180, 0.95);
+  -webkit-transition: background-color, .5s;
+          transition: background-color, .5s;
+}
+
+/* line 2, ../components/sass/_base.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 6, ../components/sass/_base.scss */
+.clearfix:after {
+  clear: both;
+}
+/* line 9, ../components/sass/_base.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 17, ../components/sass/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 21, ../components/sass/_base.scss */
+form * {
+  background: transparent;
+}
+
+/* line 25, ../components/sass/_base.scss */
+html {
+  background: -webkit-linear-gradient(rgba(217, 235, 255, 0.75), rgba(138, 145, 158, 0.75));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(217, 235, 255, 0.75)), to(rgba(138, 145, 158, 0.75)));
+  background: linear-gradient(rgba(217, 235, 255, 0.75), rgba(138, 145, 158, 0.75));
+  -webkit-box-shadow: inset 6px 12px 48px rgba(138, 145, 158, 0.75), inset -6px 0 48px rgba(138, 145, 158, 0.75);
+          box-shadow: inset 6px 12px 48px rgba(138, 145, 158, 0.75), inset -6px 0 48px rgba(138, 145, 158, 0.75);
+}
+
+/*============CLEAR DEFAULT INPUT STYLES============*/
+/* line 36, ../components/sass/_base.scss */
+input[type=text], input[type=email], input[type=password],
+input[type=url], input[type=telephone],
+textarea, button, select {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+/* line 3, ../components/sass/_nav.scss */
+nav ul {
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+}
+/* line 11, ../components/sass/_nav.scss */
+nav ul li {
+  list-style: none;
+  width: 84px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 3px;
+  padding-top: 4px;
+  border-radius: 8px 3px 0 0;
+}
+/* line 21, ../components/sass/_nav.scss */
+nav ul li:first-child {
+  margin-left: 8%;
+}
+
+/*FORM*/
+/* line 3, ../components/sass/_form_base.scss */
+.form {
+  font: .85em/1em Arial, Helvetica, Geneva, sans-serif;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+/* line 8, ../components/sass/_form_base.scss */
+.form legend {
+  display: none;
+}
+/* line 12, ../components/sass/_form_base.scss */
+.form fieldset {
+  border: none;
+  background: silver;
+  padding: 0;
+  margin: 6px auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(143, 201, 255, 0.5)), to(rgba(94, 153, 184, 0.75)));
+  background: -webkit-linear-gradient(rgba(143, 201, 255, 0.5), rgba(94, 153, 184, 0.75));
+  background: linear-gradient(rgba(143, 201, 255, 0.5), rgba(94, 153, 184, 0.75));
+  -webkit-box-shadow: inset 6px 6px 6px rgba(94, 153, 184, 0.5), inset -6px 0 6px rgba(94, 153, 184, 0.5);
+          box-shadow: inset 6px 6px 6px rgba(94, 153, 184, 0.5), inset -6px 0 6px rgba(94, 153, 184, 0.5);
+  border-radius: 8px;
+}
+/* line 27, ../components/sass/_form_base.scss */
+.form fieldset:first-child {
+  margin-top: 0;
+}
+/* line 31, ../components/sass/_form_base.scss */
+.form fieldset:before {
+  content: attr(title);
+  display: block;
+  padding: 0;
+  padding: 24px 12px 18px;
+  margin: 0 auto;
+}
+/* line 40, ../components/sass/_form_base.scss */
+.form fieldset ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 45, ../components/sass/_form_base.scss */
+.form fieldset ol li {
+  position: relative;
+  list-style: none;
+  padding: 12px 6px 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(99, 98, 99, 0.85);
+}
+/* line 52, ../components/sass/_form_base.scss */
+.form fieldset ol li:first-child {
+  border-top: none;
+}
+/* line 55, ../components/sass/_form_base.scss */
+.form fieldset ol li:last-child {
+  border-bottom: none;
+}
+
+/*============LOGIN INFO STYLES============*/
+/* line 4, ../components/sass/_login.scss */
+#login {
+  position: relative;
+}
+/* line 6, ../components/sass/_login.scss */
+#login .logsign {
+  position: relative;
+  height: 48px;
+  margin: 0;
+  /*BUTTONS*/
+}
+/* line 15, ../components/sass/_login.scss */
+#login .logsign .loginbtn {
+  position: absolute;
+  right: 24px;
+  top: 12px;
+  padding-top: 6px;
+}
+/* line 21, ../components/sass/_login.scss */
+#login .logsign .signupbtn {
+  position: absolute;
+  right: 112px;
+  top: 12px;
+  padding-top: 6px;
+}
+/* line 27, ../components/sass/_login.scss */
+#login .logsign .loginbtn, #login .logsign .signupbtn {
+  display: inline-block;
+  width: 72px;
+  height: 24px;
+}
+/* line 41, ../components/sass/_login.scss */
+#login label {
+  display: block;
+  padding-left: 12.5%;
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: #426c82;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+}
+/* line 49, ../components/sass/_login.scss */
+#login input {
+  display: block;
+  width: 75%;
+  height: 2em;
+  margin: 0 auto;
+  padding-left: 12px;
+  color: rgba(62, 35, 76, 0.85);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.65) 60%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(255, 255, 255, 0.9)), color-stop(60%, rgba(255, 255, 255, 0.65)));
+  background: linear-gradient(rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.65) 60%);
+  border-radius: 12px;
+  -webkit-box-shadow: 0.5px 0.5px 1.5px rgba(94, 153, 184, 0.75), -0.5px -0.5px 1.5px rgba(94, 153, 184, 0.75);
+          box-shadow: 0.5px 0.5px 1.5px rgba(94, 153, 184, 0.75), -0.5px -0.5px 1.5px rgba(94, 153, 184, 0.75);
+}
+/* line 68, ../components/sass/_login.scss */
+#login input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 12px #02f731, inset 0px 0px 6px #67ff27;
+          box-shadow: 0px 0px 12px #02f731, inset 0px 0px 6px #67ff27;
+}
+/* line 76, ../components/sass/_login.scss */
+#login .login li:first-child {
+  -webkit-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.85), 0 -2px 0 rgba(99, 98, 99, 0.75);
+          box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.85), 0 -2px 0 rgba(99, 98, 99, 0.75);
+}
+/* line 80, ../components/sass/_login.scss */
+#login .login li:last-child {
+  -webkit-box-shadow: 0 1px 0 rgba(99, 98, 99, 0.85), 0 2px 0 rgba(255, 255, 255, 0.75);
+          box-shadow: 0 1px 0 rgba(99, 98, 99, 0.85), 0 2px 0 rgba(255, 255, 255, 0.75);
+}
+/* line 85, ../components/sass/_login.scss */
+#login .signHide {
+  display: none;
+}
+/* line 88, ../components/sass/_login.scss */
+#login .signHide li:last-child {
+  border-bottom: none;
+}
+
+/* line 95, ../components/sass/_login.scss */
+.logsignBox {
+  -webkit-box-shadow: 0px 1px 0px rgba(99, 98, 99, 0.85), 0px 2px 0px rgba(255, 255, 255, 0.75);
+          box-shadow: 0px 1px 0px rgba(99, 98, 99, 0.85), 0px 2px 0px rgba(255, 255, 255, 0.75);
+}
+
+/*============GENDER INFO STYLES============*/
+/* line 3, ../components/sass/_gender.scss */
+.infoheader {
+  color: rgba(68, 110, 133, 0.9);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+  padding: 0 0 6px 12px;
+  -webkit-box-shadow: 0 1px 0 rgba(99, 98, 99, 0.85), 0 2px 0 rgba(255, 255, 255, 0.75);
+          box-shadow: 0 1px 0 rgba(99, 98, 99, 0.85), 0 2px 0 rgba(255, 255, 255, 0.75);
+}
+
+/* line 12, ../components/sass/_gender.scss */
+#gender .type, #gender .orientation {
+  margin: 0 12px;
+}
+/* line 14, ../components/sass/_gender.scss */
+#gender .type li, #gender .orientation li {
+  display: inline-block;
+  border: none;
+  padding-right: 6px;
+}
+/* line 18, ../components/sass/_gender.scss */
+#gender .type li label, #gender .type li textarea, #gender .orientation li label, #gender .orientation li textarea {
+  color: #426c82;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+}
+/* line 24, ../components/sass/_gender.scss */
+#gender textarea {
+  display: block;
+  padding: 6px 6px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+  -webkit-box-shadow: 0.5px 0.5px 1.5px rgba(94, 153, 184, 0.96), -0.5px -0.5px 1.5px rgba(94, 153, 184, 0.96);
+          box-shadow: 0.5px 0.5px 1.5px rgba(94, 153, 184, 0.96), -0.5px -0.5px 1.5px rgba(94, 153, 184, 0.96);
+  color: rgba(62, 35, 76, 0.85);
+}
+/* line 41, ../components/sass/_gender.scss */
+#gender .txtstuff {
+  resize: none;
+  overflow: hidden;
+}
+/* line 45, ../components/sass/_gender.scss */
+#gender .common {
+  width: 75%;
+  min-height: 64px;
+  margin: 0 auto 16px;
+  overflow: hidden;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+}
+/* line 54, ../components/sass/_gender.scss */
+#gender .hiddendiv {
+  display: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/* line 61, ../components/sass/_gender.scss */
+#gender .lbr {
+  line-height: 3px;
+}
+
+/*============TWELVE TRIBES INFO STYLES============*/
+/* line 4, ../components/sass/_tribe.scss */
+.tribehead {
+  position: relative;
+  z-index: 1;
+  width: 98%;
+  height: 2.2em;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: pink;
+}
+
+/* line 19, ../components/sass/_tribe.scss */
+.tribeorb {
+  position: absolute;
+  z-index: 2;
+  left: 12px;
+  top: -0.2em;
+  width: 2.6em;
+  height: 2.6em;
+  text-align: center;
+  padding: 9px;
+  border-radius: 50%;
+  background: teal;
+}
+
+/* line 36, ../components/sass/_tribe.scss */
+.tribetitle {
+  position: absolute;
+  z-index: 3;
+  left: 60%;
+  top: 0.13em;
+}
+
+/*============TWELVE TRIBES LIST=============*/
+/* line 47, ../components/sass/_tribe.scss */
+.hidden ol {
+  width: 50%;
+  max-width: 400px;
+  float: right;
+  clear: both;
+  margin-top: 6px;
+}
+/* line 53, ../components/sass/_tribe.scss */
+.hidden ol li {
+  margin: 0;
+  list-style: none;
+  display: none;
+}
+/* line 57, ../components/sass/_tribe.scss */
+.hidden ol li label {
+  width: 100%;
+  display: inline-block;
+  padding: 6px;
+}
