@@ -284,7 +284,7 @@ table {
 
 /*Core partials====*/
 /* line 2, ../components/sass/_mixins.scss */
-nav ul li:hover, #login .logsign .loginbtn, #login .logsign .signupbtn, nav ul li, .form fieldset:before, #login .logsign .loginbtn:hover, #login .logsign .signupbtn:hover {
+nav ul li:hover, button, .login .logsign .loginbtn, .login .logsign .signupbtn, nav ul li, .form fieldset:before, .login .logsign .loginbtn:hover, .login .logsign .signupbtn:hover {
   font-weight: bold;
   font-size: 1.13em;
   color: rgba(68, 110, 133, 0.95);
@@ -292,7 +292,7 @@ nav ul li:hover, #login .logsign .loginbtn, #login .logsign .signupbtn, nav ul l
 }
 
 /* line 9, ../components/sass/_mixins.scss */
-nav ul li:hover, #login .logsign .loginbtn, #login .logsign .signupbtn {
+nav ul li:hover, button, .login .logsign .loginbtn, .login .logsign .signupbtn {
   border: 0.98px solid rgba(255, 255, 255, 0.12);
   box-shadow: inset 0 0 4px rgba(94, 153, 184, 0.5), 0 0 1px 1.5px rgba(94, 153, 184, 0.95);
   background: -webkit-radial-gradient(circle, #5e99b8 12%, transparent);
@@ -307,7 +307,7 @@ nav ul li:hover, #login .logsign .loginbtn, #login .logsign .signupbtn {
 }
 
 /* line 29, ../components/sass/_mixins.scss */
-nav ul li, #login .logsign .loginbtn:hover, #login .logsign .signupbtn:hover {
+nav ul li, button:hover, .login .logsign .loginbtn:hover, .login .logsign .signupbtn:hover {
   cursor: pointer;
   background: -webkit-radial-gradient(rgba(0, 254, 180, 0.95), transparent);
   background: -moz-radial-gradient(rgba(0, 254, 180, 0.95), transparent);
@@ -342,6 +342,7 @@ form * {
 
 /* line 25, ../components/sass/_base.scss */
 html {
+  height: 100%;
   background: -webkit-linear-gradient(rgba(217, 235, 255, 0.75), rgba(138, 145, 158, 0.75));
   background: -o-linear-gradient(rgba(217, 235, 255, 0.75), rgba(138, 145, 158, 0.75));
   background: linear-gradient(rgba(217, 235, 255, 0.75), rgba(138, 145, 158, 0.75));
@@ -349,7 +350,7 @@ html {
 }
 
 /*============CLEAR DEFAULT INPUT STYLES============*/
-/* line 36, ../components/sass/_base.scss */
+/* line 37, ../components/sass/_base.scss */
 input[type=text], input[type=email], input[type=password],
 input[type=url], input[type=telephone],
 textarea, button, select {
@@ -383,6 +384,11 @@ nav ul li {
 /* line 21, ../components/sass/_nav.scss */
 nav ul li:first-child {
   margin-left: 8%;
+}
+
+/* line 33, ../components/sass/_nav.scss */
+.hiddenField {
+  display: none;
 }
 
 /*FORM*/
@@ -444,40 +450,48 @@ nav ul li:first-child {
   border-bottom: none;
 }
 
+/* line 65, ../components/sass/_form_base.scss */
+button {
+  width: 96px;
+  padding: 4px;
+  float: right;
+  margin: 24px 48px 0 0;
+}
+
 /*============LOGIN INFO STYLES============*/
 /* line 4, ../components/sass/_login.scss */
-#login {
+.login {
   position: relative;
 }
 /* line 6, ../components/sass/_login.scss */
-#login .logsign {
+.login .logsign {
   position: relative;
   height: 48px;
   margin: 0;
   /*BUTTONS*/
 }
 /* line 15, ../components/sass/_login.scss */
-#login .logsign .loginbtn {
+.login .logsign .loginbtn {
   position: absolute;
   right: 24px;
   top: 12px;
   padding-top: 6px;
 }
 /* line 21, ../components/sass/_login.scss */
-#login .logsign .signupbtn {
+.login .logsign .signupbtn {
   position: absolute;
   right: 112px;
   top: 12px;
   padding-top: 6px;
 }
 /* line 27, ../components/sass/_login.scss */
-#login .logsign .loginbtn, #login .logsign .signupbtn {
+.login .logsign .loginbtn, .login .logsign .signupbtn {
   display: inline-block;
   width: 72px;
   height: 24px;
 }
 /* line 41, ../components/sass/_login.scss */
-#login label {
+.login label {
   display: block;
   padding-left: 12.5%;
   margin-bottom: 8px;
@@ -486,7 +500,7 @@ nav ul li:first-child {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
 }
 /* line 49, ../components/sass/_login.scss */
-#login input {
+.login input {
   display: block;
   width: 75%;
   height: 2em;
@@ -502,24 +516,24 @@ nav ul li:first-child {
   box-shadow: 0.5px 0.5px 1.5px rgba(94, 153, 184, 0.75), -0.5px -0.5px 1.5px rgba(94, 153, 184, 0.75);
 }
 /* line 68, ../components/sass/_login.scss */
-#login input:focus {
+.login input:focus {
   outline: none;
   box-shadow: 0px 0px 12px #02f731, inset 0px 0px 6px #67ff27;
 }
 /* line 76, ../components/sass/_login.scss */
-#login .login li:first-child {
+.login .loginOptions li:first-child {
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.85), 0 -2px 0 rgba(99, 98, 99, 0.75);
 }
 /* line 80, ../components/sass/_login.scss */
-#login .login li:last-child {
+.login .loginOptions li:last-child {
   box-shadow: 0 1px 0 rgba(99, 98, 99, 0.85), 0 2px 0 rgba(255, 255, 255, 0.75);
 }
 /* line 85, ../components/sass/_login.scss */
-#login .signHide {
+.login .signHide {
   display: none;
 }
 /* line 88, ../components/sass/_login.scss */
-#login .signHide li:last-child {
+.login .signHide li:last-child {
   border-bottom: none;
 }
 
@@ -538,22 +552,22 @@ nav ul li:first-child {
 }
 
 /* line 12, ../components/sass/_gender.scss */
-#gender .type, #gender .orientation {
+.gender .type, .gender .orientation {
   margin: 0 12px;
 }
 /* line 14, ../components/sass/_gender.scss */
-#gender .type li, #gender .orientation li {
+.gender .type li, .gender .orientation li {
   display: inline-block;
   border: none;
   padding-right: 6px;
 }
 /* line 18, ../components/sass/_gender.scss */
-#gender .type li label, #gender .type li textarea, #gender .orientation li label, #gender .orientation li textarea {
+.gender .type li label, .gender .type li textarea, .gender .orientation li label, .gender .orientation li textarea {
   color: #426c82;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
 }
 /* line 24, ../components/sass/_gender.scss */
-#gender textarea {
+.gender textarea {
   display: block;
   padding: 6px 6px 0;
   -webkit-border-radius: 4px;
@@ -565,12 +579,12 @@ nav ul li:first-child {
   color: rgba(62, 35, 76, 0.85);
 }
 /* line 41, ../components/sass/_gender.scss */
-#gender .txtstuff {
+.gender .txtstuff {
   resize: none;
   overflow: hidden;
 }
 /* line 45, ../components/sass/_gender.scss */
-#gender .common {
+.gender .common {
   width: 75%;
   min-height: 64px;
   margin: 0 auto 16px;
@@ -579,14 +593,14 @@ nav ul li:first-child {
   font-family: Arial, sans-serif;
 }
 /* line 54, ../components/sass/_gender.scss */
-#gender .hiddendiv {
+.gender .hiddendiv {
   display: none;
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 /* line 61, ../components/sass/_gender.scss */
-#gender .lbr {
+.gender .lbr {
   line-height: 3px;
 }
 

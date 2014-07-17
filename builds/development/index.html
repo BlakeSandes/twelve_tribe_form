@@ -34,15 +34,15 @@
   <nav>
     <ul>
       <li class="logtab">Login</li>
-      <li class="gentab">Gender</li>
-      <li class="tribetab">Tribes</li>
+      <li class="gentab ">Gender</li>
+      <li class="tribetab hidden">Tribes</li>
     </ul>
   </nav>
   <body>
     <form class="form" action="" class="clearfix">
-      <fieldset id="login" title="Login">
+      <fieldset class="login" title="Login">
         <legend>Login Info</legend>
-        <ol class="login">
+        <ol class="loginOptions">
           <li>
             <label for="name">Username*</label>
             <input type="text" placeholder="First  Last" id="name">
@@ -71,7 +71,7 @@
           </li>
         </ol>
       </fieldset>
-      <fieldset id="gender" title="Gender Info">
+      <fieldset class="gender hiddenField" title="Gender Info">
         <legend>Gender Info</legend>
         <h3 class="infoheader">Type</h3>
         <ol class="type">
@@ -118,7 +118,7 @@
         <h3 class="infoheader">Comments</h3>
         <textarea id="comments" class="common" placeholder="Share your thoughts if you feel so inclined!"></textarea>
       </fieldset>
-      <fieldset id="tribes"  title="Twelve Tribe Info">
+      <fieldset class="tribes hiddenField"  title="Twelve Tribe Info">
         <legend>Twelve Tribe Info</legend>
         <div class="tribehead">
           <span class="tribetitle">Isutu-Esheau<br/>(I sU' too- E' shoo)</span>

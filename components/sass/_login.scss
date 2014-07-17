@@ -1,7 +1,7 @@
 /*============LOGIN INFO STYLES============*/
 
 
-#login {
+.login {
   position: relative;
   .logsign {
     position: relative;
@@ -72,7 +72,7 @@
 
     }
   } 
-  .login {
+  .loginOptions {
     li:first-child {
       box-shadow:-0 -1px 0 rgba(255,255,255,.85), 
                 -0 -2px 0 rgba(99,98,99,.75);
