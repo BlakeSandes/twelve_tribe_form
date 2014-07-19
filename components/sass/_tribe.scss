@@ -1,64 +1,66 @@
 
 /*============TWELVE TRIBES INFO STYLES============*/
-
-.tribehead {
+.tribes {
   position: relative;
-  z-index: 1;
-  width: 98%;
-  height: 2.2em;
-  margin: 0 auto;
+  .tribehead {
+    position: relative;
+    z-index: 1;
+    width: 98%;
+    height: 2.2em;
+    margin: 0 auto;
 
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-
-
-  background: pink;
-}
-
-.tribeorb {
-  position: absolute;
-  z-index: 2;
-  left: 12px;
-  top: -0.2em;
-  width: 2.6em;
-  height: 2.6em;
-  text-align: center;
-  padding: 9px;
-
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-
-  background: teal;
-}
-
-.tribetitle {
-  position: absolute;
-  z-index: 3;
-  left: 60%;
-  top: 0.13em;
-}
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
 
 
-/*============TWELVE TRIBES LIST=============*/
+    background: pink;
+  }
 
-.hiddenTribe {  
-  ol {
-    width: 50%;
-    max-width: 400px;
-    float: right;
-    clear: both;
-    margin-top: 6px;
-    li {
-      margin: 0;
-      list-style: none;
-      display: none;
-      label { 
-        width: 100%;
-        display: inline-block;
-        padding: 6px;
+  .tribeorb {
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    top: -0.2em;
+    width: 2.6em;
+    height: 2.6em;
+    text-align: center;
+    padding: 9px;
 
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    background: teal;
+  }
+
+  .tribetitle {
+    position: absolute;
+    z-index: 3;
+    left: 60%;
+    top: 0.13em;
+  }
+
+
+  /*============TWELVE TRIBES LIST=============*/
+
+  .hiddenTribe {  
+    ol {
+      width: 50%;
+      max-width: 400px;
+      float: right;
+      clear: both;
+      margin-top: 6px;
+      li {
+        margin: 0;
+        list-style: none;
+        display: none;
+        label { 
+          width: 100%;
+          display: inline-block;
+          padding: 6px;
+
+        }
       }
     }
   }

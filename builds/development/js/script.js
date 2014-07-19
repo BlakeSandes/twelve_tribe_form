@@ -7,8 +7,8 @@ $ = require('jquery');
 //HIDE SIGN UP///
 
 $(".signupbtn").on("click", function() {
-  $(".logsign").toggleClass("logsignBox");
-  $(".signHide").slideToggle("fast");  
+  //$(".logsign").toggleClass("logsignBox");
+  $(".signUpOptions").slideToggle("fast");  
 });
 //$(".signupbtn").on("click.compress", up);
 
@@ -25,6 +25,30 @@ var $;
 
 $ = require('jquery');
 
+
+
+////////////When tab clicked////////////
+
+$('nav').on("click", ".tabs", function() {
+  var self = $(this);
+  if(self.hasClass("logintab")) {
+    self.closest("nav").next().find(".gender").addClass("hiddenField");
+    self.closest("nav").next().find(".tribes").addClass("hiddenField");
+    self.closest("nav").next().find(".login").removeClass("hiddenField");
+  } else if (self.hasClass("gendertab")) {
+    self.closest("nav").next().find(".login").addClass("hiddenField");
+    self.closest("nav").next().find(".tribes").addClass("hiddenField");
+    self.closest("nav").next().find(".gender").removeClass("hiddenField"); 
+  } else if (self.hasClass("tribetab")) {
+    self.closest("nav").next().find(".login").addClass("hiddenField");
+    self.closest("nav").next().find(".gender").addClass("hiddenField");
+    self.closest("nav").next().find(".tribes").removeClass("hiddenField");  
+  }
+});
+
+
+
+
 //CREATES EXPANDING TEXTAREA//////////////////////
 
   var txt = $('#comments'), 
@@ -34,7 +58,7 @@ $ = require('jquery');
   txt.addClass('txtstuff');
   hiddenDiv.addClass('hiddendiv common');
 
-  $('#gender').append(hiddenDiv);
+  $('.gender').append(hiddenDiv);
 
   txt.on('keyup', function() {
     content = $(this).val();
@@ -46,6 +70,10 @@ $ = require('jquery');
   });
 
 //////////////////////////////////////////////////
+
+
+
+
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.1

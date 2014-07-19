@@ -2,51 +2,54 @@
 %fontStyle {
   font-weight: bold;
   font-size: 1.13em;
-  color: rgba(68,110,133,.95);
+  color: $fontColor;
   text-shadow: 1px 1px 1px rgba(255,255,255,.75);
 }
 
 %buttonStyle {
   border: .98px solid rgba(255,255,255,.12);
   box-shadow: inset 0 0 4px rgba(94,153,184,.5),
-              0 0 1px 1.5px rgba(94,153,184,.95);
+              0 0 1px 1.5px rgba(68,110,133,.95);
+
+   
+  border-radius: $buttonRadius;          
   
-  
-  background: -webkit-radial-gradient(circle, rgba(94,153,184,1) 12%, transparent);
-  background: -moz-radial-gradient(circle, rgba(94,153,184,1) 12%, transparent);
-  background: radial-gradient(circle, rgba(255,255,255,1) 12%, transparent);
-  background-color: rgba(94,153,184,1);
-  @extend %fontStyle;
   text-align: center;
 
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px; 
-  border-radius: 1px;
+  transition-duration: 1s;
+  background: radial-gradient(rgba(94,153,184,1) 20%, rgba(94,153,184,.5));
 
-  transition-duration: 1s; 
+  background-color: $buttonColor;
+  @extend %fontStyle; 
+  &:hover {
+    @extend %hoverStyle;
+  }
+  &:focus {
+    @extend %focusStyle;
+    @extend %hoverStyle;
+  }
 }
+
+
 
 %hoverStyle {
   cursor: pointer;
-  background: -webkit-radial-gradient(rgba(0,254,180,.95),  transparent);
-  background: -moz-radial-gradient(rgba(0,254,180,.95), transparent);
-  background: radial-gradient(rgba(0,254,180,.95), transparent);
-  background-color: rgba(0,254,180, .95);
+  background: radial-gradient(circle, rgba(94,153,184,.1), rgba(94,153,184,.2));
+
+  background-color: $hoverColor;
   transition: background-color, .5s;
+  color: lighten($fontColor, 8%);
 }
 
 %focusStyle {
   outline: none;
-  box-shadow: 0px 0px 12px rgba(2,247,49,1),
-              inset 0px 0px 6px rgba(103,255,39,1);
+  box-shadow: 0px 0px 6px rgba(2,247,49,.75),
+              inset 0px 0px 6px rgba(103,255,39,.75);
 }
 
 %inputStyle {
   
   color: rgba(62,35,76,.85);
-    
-  background: -webkit-linear-gradient(rgba(255, 255, 255,.90) 40%, rgba(255, 255, 255,.65) 60%);
-  background: -o-linear-gradient(rgba(255, 255, 255,.90) 40%, rgba(255, 255, 255,.65) 60%);
   background: linear-gradient(rgba(255, 255, 255,.90) 40%, rgba(255, 255, 255,.65) 60%);
 
   -webkit-border-radius: 12px;
@@ -55,6 +58,10 @@
 
   box-shadow: .5px .5px 1.5px rgba(94,153,184,.75),
               -.5px -.5px 1.5px rgba(94,153,184,.75);
+
+  &:focus {
+    @extend %focusStyle;
+  }
 
 }
 

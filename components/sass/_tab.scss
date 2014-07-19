@@ -8,20 +8,16 @@ nav {
     margin-top: 50px;
     padding: 0;
     
-    li {
+    button {
       list-style: none;
       width: 84px;
       display: inline-block;
       text-align: center;
-      margin: 0 3px;
-      padding-top: 4px;
-      border-radius: 8px 3px 0 0;
-      
+      margin: 0 5px;
+      padding: 2px 0;
+      border-radius: 1.5px 1.5px 0 0;
       @extend %fontStyle;
       @extend %buttonStyle;
-      &:first-child {
-        margin-left: 8%;
-      }
       &:hover {
         @extend %fontStyle;
         @extend %hoverStyle;
@@ -31,7 +27,18 @@ nav {
         @extend %buttonStyle;
       }
     }
-      
+    .logintab {
+      float: right;
+      margin-right: 6%;
+      background: mix($buttonColor, silver);
+    }
+    .gendertab {
+      margin-left: 6%;
+      background: mix($buttonColor, aqua);
+    } 
+    .tribetab {
+      background: invert($buttonColor);
+    }
   }  
 }
 

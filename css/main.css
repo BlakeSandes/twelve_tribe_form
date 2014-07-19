@@ -284,7 +284,7 @@ table {
 
 /*Core partials====*/
 /* line 2, ../components/sass/_mixins.scss */
-nav ul li, nav ul li:focus, .button, .login .logsign .loginbtn, .login .logsign .signupbtn, nav ul li:hover, .form fieldset:before, .button:hover, .login .logsign .loginbtn:hover, .login .logsign .signupbtn:hover {
+nav ul button, nav ul button:focus, .form fieldset .signUpFooter .prev, .form fieldset .signUpFooter .next, .button, .login .firstFooter.signUpFooter .signupbtn, nav ul button:hover, .form fieldset:before, .button:hover {
   font-weight: bold;
   font-size: 1.13em;
   color: rgba(68, 110, 133, 0.95);
@@ -292,41 +292,34 @@ nav ul li, nav ul li:focus, .button, .login .logsign .loginbtn, .login .logsign 
 }
 
 /* line 9, ../components/sass/_mixins.scss */
-nav ul li, nav ul li:focus, .button, .login .logsign .loginbtn, .login .logsign .signupbtn {
+nav ul button, nav ul button:focus, .form fieldset .signUpFooter .prev, .form fieldset .signUpFooter .next, .button, .login .firstFooter.signUpFooter .signupbtn {
   border: 0.98px solid rgba(255, 255, 255, 0.12);
-  box-shadow: inset 0 0 4px rgba(94, 153, 184, 0.5), 0 0 1px 1.5px rgba(94, 153, 184, 0.95);
-  background: -webkit-radial-gradient(circle, #5e99b8 12%, transparent);
-  background: -moz-radial-gradient(circle, #5e99b8 12%, transparent);
-  background: radial-gradient(circle, #ffffff 12%, rgba(0, 0, 0, 0));
-  background-color: #5e99b8;
+  box-shadow: inset 0 0 4px rgba(94, 153, 184, 0.5), 0 0 1px 1.5px rgba(68, 110, 133, 0.95);
+  border-radius: 1.5px;
   text-align: center;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
   transition-duration: 1s;
+  background: radial-gradient(#5e99b8 20%, rgba(94, 153, 184, 0.5));
+  background-color: rgba(94, 153, 184, 0.45);
 }
 
-/* line 29, ../components/sass/_mixins.scss */
-nav ul li:hover, .button:hover, .login .logsign .loginbtn:hover, .login .logsign .signupbtn:hover {
+/* line 35, ../components/sass/_mixins.scss */
+nav ul button:hover, nav ul button:hover:focus, .form fieldset .signUpFooter .prev:hover, .form fieldset .signUpFooter .next:hover, .button:hover, .login .firstFooter.signUpFooter .signupbtn:hover, nav ul button:focus, .form fieldset .signUpFooter .prev:focus, .form fieldset .signUpFooter .next:focus, .button:focus, .login .firstFooter.signUpFooter .signupbtn:focus {
   cursor: pointer;
-  background: -webkit-radial-gradient(rgba(0, 254, 180, 0.95), transparent);
-  background: -moz-radial-gradient(rgba(0, 254, 180, 0.95), transparent);
-  background: radial-gradient(rgba(0, 254, 180, 0.95), rgba(0, 0, 0, 0));
-  background-color: rgba(0, 254, 180, 0.95);
+  background: radial-gradient(circle, rgba(94, 153, 184, 0.1), rgba(94, 153, 184, 0.2));
+  background-color: #00feb4;
   transition: background-color, .5s;
-}
-
-/* line 38, ../components/sass/_mixins.scss */
-.login .loginOptions input:focus, .login .signHide input:focus {
-  outline: none;
-  box-shadow: 0px 0px 12px #02f731, inset 0px 0px 6px #67ff27;
+  color: rgba(82, 132, 160, 0.95);
 }
 
 /* line 44, ../components/sass/_mixins.scss */
-.login .loginOptions input, .login .signHide input {
+nav ul button:focus, .form fieldset .signUpFooter .prev:focus, .form fieldset .signUpFooter .next:focus, .button:focus, .login .firstFooter.signUpFooter .signupbtn:focus, .login .loginOptions input:focus, .login .signUpOptions input:focus, .gender textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(2, 247, 49, 0.75), inset 0px 0px 6px rgba(103, 255, 39, 0.75);
+}
+
+/* line 50, ../components/sass/_mixins.scss */
+.login .loginOptions input, .login .signUpOptions input {
   color: rgba(62, 35, 76, 0.85);
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.65) 60%);
-  background: -o-linear-gradient(rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.65) 60%);
   background: linear-gradient(rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.65) 60%);
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -379,7 +372,7 @@ textarea, button, select {
   padding: 0;
 }
 
-/* line 3, ../components/sass/_nav.scss */
+/* line 3, ../components/sass/_tab.scss */
 nav ul {
   display: block;
   width: 80%;
@@ -388,22 +381,33 @@ nav ul {
   margin-top: 50px;
   padding: 0;
 }
-/* line 11, ../components/sass/_nav.scss */
-nav ul li {
+/* line 11, ../components/sass/_tab.scss */
+nav ul button {
   list-style: none;
   width: 84px;
   display: inline-block;
   text-align: center;
-  margin: 0 3px;
-  padding-top: 4px;
-  border-radius: 8px 3px 0 0;
+  margin: 0 5px;
+  padding: 2px 0;
+  border-radius: 1.5px 1.5px 0 0;
 }
-/* line 22, ../components/sass/_nav.scss */
-nav ul li:first-child {
-  margin-left: 8%;
+/* line 30, ../components/sass/_tab.scss */
+nav ul .logintab {
+  float: right;
+  margin-right: 6%;
+  background: rgba(169, 183, 190, 0.725);
+}
+/* line 35, ../components/sass/_tab.scss */
+nav ul .gendertab {
+  margin-left: 6%;
+  background: rgba(21, 232, 239, 0.725);
+}
+/* line 39, ../components/sass/_tab.scss */
+nav ul .tribetab {
+  background: rgba(161, 102, 71, 0.45);
 }
 
-/* line 38, ../components/sass/_nav.scss */
+/* line 45, ../components/sass/_tab.scss */
 .hiddenField {
   display: none;
 }
@@ -425,7 +429,7 @@ nav ul li:first-child {
   border: none;
   background: silver;
   padding: 0;
-  margin: 6px auto;
+  margin: 4px auto 6px;
   background: linear-gradient(rgba(143, 201, 255, 0.5), rgba(94, 153, 184, 0.75));
   box-shadow: inset 6px 6px 6px rgba(94, 153, 184, 0.5), inset -6px 0 6px rgba(94, 153, 184, 0.5);
   -webkit-border-radius: 8px;
@@ -433,10 +437,6 @@ nav ul li:first-child {
   border-radius: 8px;
 }
 /* line 27, ../components/sass/_form_base.scss */
-.form fieldset:first-child {
-  margin-top: 0;
-}
-/* line 31, ../components/sass/_form_base.scss */
 .form fieldset:before {
   content: attr(title);
   display: block;
@@ -444,13 +444,13 @@ nav ul li:first-child {
   padding: 24px 12px 18px;
   margin: 0 auto;
 }
-/* line 40, ../components/sass/_form_base.scss */
+/* line 36, ../components/sass/_form_base.scss */
 .form fieldset ol {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-/* line 45, ../components/sass/_form_base.scss */
+/* line 41, ../components/sass/_form_base.scss */
 .form fieldset ol li {
   position: relative;
   list-style: none;
@@ -458,56 +458,50 @@ nav ul li:first-child {
   border-top: 1px solid rgba(255, 255, 255, 0.75);
   border-bottom: 1px solid rgba(99, 98, 99, 0.85);
 }
-/* line 52, ../components/sass/_form_base.scss */
+/* line 48, ../components/sass/_form_base.scss */
 .form fieldset ol li:first-child {
   border-top: none;
 }
-/* line 55, ../components/sass/_form_base.scss */
+/* line 51, ../components/sass/_form_base.scss */
 .form fieldset ol li:last-child {
   border-bottom: none;
 }
+/* line 58, ../components/sass/_form_base.scss */
+.form fieldset .signUpFooter {
+  height: 48px;
+  margin: 0;
+  box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.75), 0px -2px 0px rgba(99, 98, 99, 0.85);
+}
+/* line 63, ../components/sass/_form_base.scss */
+.form fieldset .signUpFooter .prev {
+  display: block;
+  float: left;
+  width: 72px;
+  height: 24px;
+  margin: 14px 0 0 24px;
+  background: rgba(21, 232, 239, 0.725);
+}
+/* line 72, ../components/sass/_form_base.scss */
+.form fieldset .signUpFooter .next {
+  display: block;
+  float: right;
+  width: 72px;
+  height: 24px;
+  margin: 14px 24px 0 0;
+  background: rgba(161, 102, 71, 0.45);
+}
 
-/* line 65, ../components/sass/_form_base.scss */
+/* line 89, ../components/sass/_form_base.scss */
 .button {
   width: 72px;
   padding: 4px;
   float: right;
   margin: 24px 48px 100% 0;
+  background: rgba(218, 201, 41, 0.725);
 }
 
 /*============LOGIN INFO STYLES============*/
-/* line 4, ../components/sass/_login.scss */
-.login {
-  position: relative;
-}
-/* line 6, ../components/sass/_login.scss */
-.login .logsign {
-  position: relative;
-  height: 48px;
-  margin: 0;
-  /*BUTTONS*/
-}
-/* line 15, ../components/sass/_login.scss */
-.login .logsign .loginbtn {
-  position: absolute;
-  right: 24px;
-  top: 12px;
-  padding-top: 6px;
-}
-/* line 21, ../components/sass/_login.scss */
-.login .logsign .signupbtn {
-  position: absolute;
-  right: 112px;
-  top: 12px;
-  padding-top: 6px;
-}
-/* line 27, ../components/sass/_login.scss */
-.login .logsign .loginbtn, .login .logsign .signupbtn {
-  display: inline-block;
-  width: 72px;
-  height: 24px;
-}
-/* line 41, ../components/sass/_login.scss */
+/* line 7, ../components/sass/_login.scss */
 .login label {
   display: block;
   padding-left: 12.5%;
@@ -516,34 +510,46 @@ nav ul li:first-child {
   color: #426c82;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
 }
-/* line 49, ../components/sass/_login.scss */
-.login .loginOptions input, .login .signHide input {
+/* line 16, ../components/sass/_login.scss */
+.login .loginOptions input, .login .signUpOptions input {
   display: block;
   width: 75%;
   height: 2em;
   margin: 0 auto;
   padding-left: 12px;
 }
-/* line 63, ../components/sass/_login.scss */
+/* line 26, ../components/sass/_login.scss */
 .login .loginOptions li:first-child {
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.85), 0 -2px 0 rgba(99, 98, 99, 0.75);
 }
-/* line 67, ../components/sass/_login.scss */
+/* line 30, ../components/sass/_login.scss */
 .login .loginOptions li:last-child {
   box-shadow: 0 1px 0 rgba(99, 98, 99, 0.85), 0 2px 0 rgba(255, 255, 255, 0.75);
 }
-/* line 72, ../components/sass/_login.scss */
-.login .signHide {
+/* line 36, ../components/sass/_login.scss */
+.login .signUpOptions {
   display: none;
 }
-/* line 75, ../components/sass/_login.scss */
-.login .signHide li:last-child {
-  border-bottom: none;
+/* line 39, ../components/sass/_login.scss */
+.login .signUpOptions li:last-child {
+  box-shadow: 0 1px 0 rgba(99, 98, 99, 0.85), 0 2px 0 rgba(255, 255, 255, 0.75);
 }
-
-/* line 82, ../components/sass/_login.scss */
-.logsignBox {
-  box-shadow: 0px 1px 0px rgba(99, 98, 99, 0.85), 0px 2px 0px rgba(255, 255, 255, 0.75);
+/* line 46, ../components/sass/_login.scss */
+.login .firstFooter.signUpFooter {
+  box-shadow: none;
+}
+/* line 48, ../components/sass/_login.scss */
+.login .firstFooter.signUpFooter .signupbtn {
+  display: block;
+  float: left;
+  width: 72px;
+  height: 24px;
+  margin: 14px 0 0 24px;
+  background: rgba(169, 183, 190, 0.725);
+}
+/* line 57, ../components/sass/_login.scss */
+.login .firstFooter.signUpFooter .next {
+  background: rgba(21, 232, 239, 0.725);
 }
 
 /*============GENDER INFO STYLES============*/
@@ -555,22 +561,27 @@ nav ul li:first-child {
   box-shadow: 0 1px 0 rgba(99, 98, 99, 0.85), 0 2px 0 rgba(255, 255, 255, 0.75);
 }
 
-/* line 12, ../components/sass/_gender.scss */
+/* line 11, ../components/sass/_gender.scss */
+.gender {
+  position: relative;
+  /*======Styling for expanding textarea======*/
+}
+/* line 13, ../components/sass/_gender.scss */
 .gender .type, .gender .orientation {
   margin: 0 12px;
 }
-/* line 14, ../components/sass/_gender.scss */
+/* line 15, ../components/sass/_gender.scss */
 .gender .type li, .gender .orientation li {
   display: inline-block;
   border: none;
   padding-right: 6px;
 }
-/* line 18, ../components/sass/_gender.scss */
+/* line 19, ../components/sass/_gender.scss */
 .gender .type li label, .gender .type li textarea, .gender .orientation li label, .gender .orientation li textarea {
   color: #426c82;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
 }
-/* line 24, ../components/sass/_gender.scss */
+/* line 25, ../components/sass/_gender.scss */
 .gender textarea {
   display: block;
   padding: 6px 6px 0;
@@ -582,12 +593,16 @@ nav ul li:first-child {
   box-shadow: 0.5px 0.5px 1.5px rgba(94, 153, 184, 0.96), -0.5px -0.5px 1.5px rgba(94, 153, 184, 0.96);
   color: rgba(62, 35, 76, 0.85);
 }
-/* line 41, ../components/sass/_gender.scss */
+/* line 45, ../components/sass/_gender.scss */
+.gender .secondFooter.signUpFooter .prev {
+  background: rgba(169, 183, 190, 0.725);
+}
+/* line 53, ../components/sass/_gender.scss */
 .gender .txtstuff {
   resize: none;
   overflow: hidden;
 }
-/* line 45, ../components/sass/_gender.scss */
+/* line 57, ../components/sass/_gender.scss */
 .gender .common {
   width: 75%;
   min-height: 64px;
@@ -596,21 +611,26 @@ nav ul li:first-child {
   font-size: 13px;
   font-family: Arial, sans-serif;
 }
-/* line 54, ../components/sass/_gender.scss */
+/* line 66, ../components/sass/_gender.scss */
 .gender .hiddendiv {
   display: none;
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
-/* line 61, ../components/sass/_gender.scss */
+/* line 73, ../components/sass/_gender.scss */
 .gender .lbr {
   line-height: 3px;
 }
 
 /*============TWELVE TRIBES INFO STYLES============*/
-/* line 4, ../components/sass/_tribe.scss */
-.tribehead {
+/* line 3, ../components/sass/_tribe.scss */
+.tribes {
+  position: relative;
+  /*============TWELVE TRIBES LIST=============*/
+}
+/* line 5, ../components/sass/_tribe.scss */
+.tribes .tribehead {
   position: relative;
   z-index: 1;
   width: 98%;
@@ -621,9 +641,8 @@ nav ul li:first-child {
   border-radius: 12px;
   background: pink;
 }
-
-/* line 19, ../components/sass/_tribe.scss */
-.tribeorb {
+/* line 20, ../components/sass/_tribe.scss */
+.tribes .tribeorb {
   position: absolute;
   z-index: 2;
   left: 12px;
@@ -637,32 +656,29 @@ nav ul li:first-child {
   border-radius: 50%;
   background: teal;
 }
-
-/* line 36, ../components/sass/_tribe.scss */
-.tribetitle {
+/* line 37, ../components/sass/_tribe.scss */
+.tribes .tribetitle {
   position: absolute;
   z-index: 3;
   left: 60%;
   top: 0.13em;
 }
-
-/*============TWELVE TRIBES LIST=============*/
-/* line 47, ../components/sass/_tribe.scss */
-.hiddenTribe ol {
+/* line 48, ../components/sass/_tribe.scss */
+.tribes .hiddenTribe ol {
   width: 50%;
   max-width: 400px;
   float: right;
   clear: both;
   margin-top: 6px;
 }
-/* line 53, ../components/sass/_tribe.scss */
-.hiddenTribe ol li {
+/* line 54, ../components/sass/_tribe.scss */
+.tribes .hiddenTribe ol li {
   margin: 0;
   list-style: none;
   display: none;
 }
-/* line 57, ../components/sass/_tribe.scss */
-.hiddenTribe ol li label {
+/* line 58, ../components/sass/_tribe.scss */
+.tribes .hiddenTribe ol li label {
   width: 100%;
   display: inline-block;
   padding: 6px;

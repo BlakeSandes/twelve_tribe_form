@@ -13,7 +13,7 @@
     border: none;
     background: silver;
     padding: 0;
-    margin: 6px auto;
+    margin: 4px auto 6px;
   
     
     background: linear-gradient(rgba(143,201,255,.5), rgba(94,153,184,.75));
@@ -23,10 +23,6 @@
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    
-    &:first-child {
-      margin-top: 0;
-    }
 
     &:before {
       content: attr(title);
@@ -58,20 +54,51 @@
 
         } 
       }
+
+    .signUpFooter {
+      height: 48px;
+      margin:  0;
+      box-shadow: -0px -1px 0px rgba(255,255,255,.75),
+                  -0px -2px 0px rgba(99,98,99,.85);
+      .prev {
+        display: block;
+        float: left;
+        width: 72px;
+        height: 24px;
+        margin: 14px 0 0 24px;
+        @extend %buttonStyle;
+        background: mix($buttonColor, aqua);
+      }
+      .next {
+        display: block;
+        float: right;
+        width: 72px;
+        height: 24px;
+        margin: 14px 24px 0 0;
+        @extend %buttonStyle;
+        background: invert($buttonColor);
+      }
+    }
     
   }
 }
 
+
+
+
 .button {
   
-  @extend %fontStyle;
   @extend %buttonStyle;
   width: 72px;
   padding: 4px;
   float: right;
   margin: 24px 48px 100% 0;
+  background: mix($buttonColor, gold);
   &:hover {
     @extend %fontStyle;
     @extend %hoverStyle;
+  }
+  &:focus {
+  @extend %focusStyle;
   }
 }

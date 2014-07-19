@@ -1,3 +1,7 @@
+
+
+
+
 //CREATES EXPANDING TEXTAREA//////////////////////
 
   var txt = $('#comments'), 
@@ -7,7 +11,7 @@
   txt.addClass('txtstuff');
   hiddenDiv.addClass('hiddendiv common');
 
-  $('#gender').append(hiddenDiv);
+  $('.gender').append(hiddenDiv);
 
   txt.on('keyup', function() {
     content = $(this).val();
@@ -19,3 +23,6 @@
   });
 
 //////////////////////////////////////////////////
+
+
+

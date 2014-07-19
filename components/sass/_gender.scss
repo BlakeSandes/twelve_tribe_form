@@ -9,6 +9,7 @@
 }
 
 .gender {
+  position: relative;
   .type, .orientation {
     margin: 0 12px;
     li {
@@ -36,7 +37,18 @@
                 -.5px -.5px 1.5px rgba(94,153,184,.96);
     
     color: rgba(62,35,76,.85);
+    &:focus {
+      @extend %focusStyle;
+    }
   }
+
+  .secondFooter.signUpFooter .prev {
+    background: mix($buttonColor, silver); 
+  }
+
+
+/*======Styling for expanding textarea======*/
+
 
   .txtstuff {
     resize: none;
