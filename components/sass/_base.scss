@@ -10,9 +10,6 @@
     *zoom:1;
   }
 }
-.clearfix {
-    @extend %clearfix;
-}
 
 * {
   box-sizing: border-box;
@@ -34,7 +31,7 @@ html {
 /*============CLEAR DEFAULT INPUT STYLES============*/
 
 input[type=text], input[type=email],input[type=password], 
-input[type=url], input[type=telephone],
+input[type=url], input[type=tel],
 textarea, button, select {
   border: none;
   background: transparent;

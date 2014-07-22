@@ -1,67 +1,284 @@
 
 /*============TWELVE TRIBES INFO STYLES============*/
+
 .tribes {
-  position: relative;
-  .tribehead {
-    position: relative;
-    z-index: 1;
-    width: 98%;
-    height: 2.2em;
-    margin: 0 auto;
+  .tribediv {
+    @include clearfix;
+    width: 100%;
+    height: 100%;
 
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
+    div {
+      position: relative;
+      width: 94%;
+      height: 2.4em;
+      margin: 2px 3%;
+
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      border-radius: 12px;
+
+      box-shadow: 0 0 2px silver;
+        
+      
+      span:first-child {
+        position: absolute;
+        left: 8px;
+        top: -0.1em;
+        width: 2.6em;
+        height: 2.6em;
+        text-align: center;
+        padding: 9px;
+
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        box-shadow: 0 0 1.5px rgba(136,138,137,.50);
+        &:hover {
+          cursor: pointer;
+        }
+
+      }
+
+      span:last-child {
+        float: right;
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 2px;
+
+        text-align: center;
+
+      }
+    }
 
 
-    background: pink;
-  }
-
-  .tribeorb {
-    position: absolute;
-    z-index: 2;
-    left: 12px;
-    top: -0.2em;
-    width: 2.6em;
-    height: 2.6em;
-    text-align: center;
-    padding: 9px;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-
-    background: teal;
-  }
-
-  .tribetitle {
-    position: absolute;
-    z-index: 3;
-    left: 60%;
-    top: 0.13em;
-  }
+    /*============TWELVE TRIBES LIST=============*/
 
 
-  /*============TWELVE TRIBES LIST=============*/
-
-  .hiddenTribe {  
-    ol {
-      width: 50%;
-      max-width: 400px;
+    .hiddenTribe {  
+      
+      display: block;
+      width: 40%;
+      margin: 0 8% 12px 0;
       float: right;
-      clear: both;
-      margin-top: 6px;
+
       li {
-        margin: 0;
-        list-style: none;
         display: none;
+        width: 100%;
+        height: 2.1em;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        @extend %fontStyle;
+        color: darken($fontColor, 12%);
+        
+        &:hover {
+          @extend %hoverStyle;  
+        }
+        
+        input[type=checkbox] {
+          display: none;
+        }
         label { 
-          width: 100%;
-          display: inline-block;
-          padding: 6px;
+          display: inline-block;        
+          margin: 0 auto;
+          padding: 6px 0 ;
 
         }
       }
+      
+    }  
+  
+    .tribehead1 {
+      background: lighten($tribe1, 20%);
+      box-shadow: inset 0 0 2.5px  darken($tribe1, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe1, 28%) 15%, lighten($tribe1, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe1, 32%) 15%, lighten($tribe1, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe1);
+      }
+    } 
+
+    .tribehead2 {
+      background: lighten($tribe2, 20%);
+      box-shadow: inset 0 0 2.5px darken($tribe2, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe2, 28%) 15%, lighten($tribe2, 4%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe2, 32%) 15%, lighten($tribe2, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe2);
+      }
     }
-  }
+
+    .tribehead3 {
+      background: lighten($tribe3, 30%);
+      box-shadow: inset 0 0 2.5px darken($tribe3, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe3, 38%) 15%, lighten($tribe3, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe3, 32%) 15%, lighten($tribe3, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe3);
+      }
+    }
+
+    .tribehead4 {
+      background: lighten($tribe4, 20%);
+      box-shadow: inset 0 0 2.5px darken($tribe4, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe4, 28%) 15%, lighten($tribe4, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe4, 32%) 15%, lighten($tribe4, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe4);
+      }
+    }
+
+    .tribehead5 {
+      background: lighten($tribe5, 20%);
+      box-shadow: inset 0 0 2.5px darken($tribe5, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe5, 28%) 15%, lighten($tribe5, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe5, 32%) 15%, lighten($tribe5, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe5);
+      }
+    }
+
+    .tribehead6 {
+      background: lighten($tribe6, 20%);
+      box-shadow: inset 0 0 2.5px darken($tribe6, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe6, 28%) 15%, lighten($tribe6, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe6, 32%) 15%, lighten($tribe6, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe6);
+        @media screen and (max-width: 520px) {
+          width: 75%;
+        }
+      }
+    }
+
+    .tribehead7 {
+      background: lighten($tribe7, 20%);
+      box-shadow: inset 0 0 2.5px darken($tribe7, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe7, 28%) 15%, lighten($tribe7, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe7, 32%) 15%, lighten($tribe7, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe7);
+      }
+    }
+
+    .tribehead8 {
+      background: $tribe8;
+      box-shadow: inset 0 0 2.5px darken($tribe8, 8%);
+      .tribeorb8 {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe8, 28%) 15%, lighten($tribe8, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe8, 32%) 15%, lighten($tribe8, 14%) 95%);
+        }
+      }
+      .tribetitle8 {
+        @extend %fontStyle;
+        color: complement($tribe8);
+        @media screen and (max-width: 520px) {
+          width: 75%;
+        }
+      }
+    }
+
+    .tribehead9 {
+      background: lighten($tribe9, 10%);
+      box-shadow: inset 0 0 2.5px darken($tribe9, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe9, 28%) 15%, lighten($tribe9, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe9, 32%) 15%, lighten($tribe9, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe9);
+      }
+    }
+
+    .tribehead10 {
+      background: lighten($tribe10, 32%);
+      box-shadow: inset 0 0 2.5px darken($tribe10, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe10, 38%) 15%, lighten($tribe10, 18%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe10, 42%) 15%, lighten($tribe10, 24%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe10);
+      }
+    }
+
+    .tribehead11 {
+      background: lighten($tribe11, 20%);
+      box-shadow: inset 0 0 2.5px darken($tribe11, 8%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, lighten($tribe11, 28%) 15%, lighten($tribe11, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe11, 32%) 15%, lighten($tribe11, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: complement($tribe11);
+      }
+    }
+
+    .tribehead12 {
+      background: lighten($tribe12, 20%);
+      box-shadow: inset 0 0 3.5px darken($tribe12, 48%);
+      .tribeorb {
+        background: radial-gradient(circle 28px at 20px 40%, darken($tribe12, 8%) 15%, lighten($tribe12, 8%) 95%);
+        &:hover {
+          background: radial-gradient(circle 28px at 20px 40%, lighten($tribe12, 32%) 15%, lighten($tribe12, 14%) 95%);
+        }
+      }
+      .tribetitle {
+        @extend %fontStyle;
+        color: darken($tribe12, 70%);
+      }
+    }
+  } 
 }
+
+/*======Individual tribe styling======*/
+
+  
+
