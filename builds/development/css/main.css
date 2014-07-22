@@ -641,7 +641,7 @@ nav ul .tribetab {
   position: relative;
   width: 94%;
   height: 2.4em;
-  margin: 2px 3%;
+  margin: 3px 3%;
   border-radius: 12px;
   -webkit-box-shadow: 0 0 2px silver;
           box-shadow: 0 0 2px silver;
@@ -663,8 +663,10 @@ nav ul .tribetab {
 /* line 38, ../components/sass/_tribe.scss */
 .tribes .tribediv div span:first-child:hover {
   cursor: pointer;
+  -webkit-box-shadow: 0 0 1.5px #888a89, 0 0 2.5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 1.5px #888a89, 0 0 2.5px rgba(255, 255, 255, 0.5);
 }
-/* line 45, ../components/sass/_tribe.scss */
+/* line 47, ../components/sass/_tribe.scss */
 .tribes .tribediv div span:last-child {
   float: right;
   width: 60%;
@@ -672,18 +674,24 @@ nav ul .tribetab {
   padding-top: 2px;
   text-align: center;
 }
-/* line 58, ../components/sass/_tribe.scss */
+/* line 61, ../components/sass/_tribe.scss */
 .tribes .tribediv .hiddenTribe {
   display: none;
 }
-/* line 62, ../components/sass/_tribe.scss */
+/* line 65, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribeList {
   display: block;
-  width: 40%;
-  margin: 0 8% 12px 0;
+  width: 164px;
+  margin: 0 12% 12px 0;
   float: right;
 }
-/* line 68, ../components/sass/_tribe.scss */
+@media screen and (max-width: 500px) {
+  /* line 65, ../components/sass/_tribe.scss */
+  .tribes .tribediv .tribeList {
+    margin-right: 7%;
+  }
+}
+/* line 73, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribeList li {
   width: 100%;
   height: 2.1em;
@@ -693,266 +701,266 @@ nav ul .tribetab {
   text-align: center;
   color: rgba(47, 77, 93, 0.95);
 }
-/* line 82, ../components/sass/_tribe.scss */
+/* line 87, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribeList li input[type=checkbox] {
   display: none;
 }
-/* line 85, ../components/sass/_tribe.scss */
+/* line 90, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribeList li label {
   display: inline-block;
   margin: 0 auto;
   padding: 6px 0;
 }
-/* line 95, ../components/sass/_tribe.scss */
+/* line 100, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead1 {
   background: #ff6666;
   -webkit-box-shadow: inset 0 0 2.5px #d60000;
           box-shadow: inset 0 0 2.5px #d60000;
 }
-/* line 98, ../components/sass/_tribe.scss */
+/* line 103, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead1 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ff8f8f 15%, #ff2929 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ff8f8f 15%, #ff2929 95%);
 }
-/* line 100, ../components/sass/_tribe.scss */
+/* line 105, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead1 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffa3a3 15%, #ff4747 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffa3a3 15%, #ff4747 95%);
 }
-/* line 104, ../components/sass/_tribe.scss */
+/* line 109, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead1 .tribetitle {
   color: cyan;
 }
-/* line 110, ../components/sass/_tribe.scss */
+/* line 115, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead2 {
   background: #ffc966;
   -webkit-box-shadow: inset 0 0 2.5px #d68b00;
           box-shadow: inset 0 0 2.5px #d68b00;
 }
-/* line 113, ../components/sass/_tribe.scss */
+/* line 118, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead2 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffd78f 15%, #ffac14 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffd78f 15%, #ffac14 95%);
 }
-/* line 115, ../components/sass/_tribe.scss */
+/* line 120, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead2 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffdfa3 15%, #ffbe47 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffdfa3 15%, #ffbe47 95%);
 }
-/* line 119, ../components/sass/_tribe.scss */
+/* line 124, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead2 .tribetitle {
   color: #005aff;
 }
-/* line 125, ../components/sass/_tribe.scss */
+/* line 130, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead3 {
   background: #ffff3d;
   -webkit-box-shadow: inset 0 0 2.5px #c2c200;
           box-shadow: inset 0 0 2.5px #c2c200;
 }
-/* line 128, ../components/sass/_tribe.scss */
+/* line 133, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead3 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffffc2 15%, #f0f000 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffffc2 15%, #f0f000 95%);
 }
-/* line 130, ../components/sass/_tribe.scss */
+/* line 135, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead3 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffffd6 15%, #ffff33 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffffd6 15%, #ffff33 95%);
 }
-/* line 134, ../components/sass/_tribe.scss */
+/* line 139, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead3 .tribetitle {
   color: blue;
 }
-/* line 140, ../components/sass/_tribe.scss */
+/* line 145, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead4 {
   background: #00e600;
   -webkit-box-shadow: inset 0 0 2.5px #005700;
           box-shadow: inset 0 0 2.5px #005700;
 }
-/* line 143, ../components/sass/_tribe.scss */
+/* line 148, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead4 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #10ff10 15%, #00a900 95%);
   background: radial-gradient(circle 28px at 20px 40%, #10ff10 15%, #00a900 95%);
 }
-/* line 145, ../components/sass/_tribe.scss */
+/* line 150, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead4 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #24ff24 15%, #00c700 95%);
   background: radial-gradient(circle 28px at 20px 40%, #24ff24 15%, #00c700 95%);
 }
-/* line 149, ../components/sass/_tribe.scss */
+/* line 154, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead4 .tribetitle {
   color: purple;
 }
-/* line 155, ../components/sass/_tribe.scss */
+/* line 160, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead5 {
   background: #6666ff;
   -webkit-box-shadow: inset 0 0 2.5px #0000d6;
           box-shadow: inset 0 0 2.5px #0000d6;
 }
-/* line 158, ../components/sass/_tribe.scss */
+/* line 163, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead5 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #8f8fff 15%, #2929ff 95%);
   background: radial-gradient(circle 28px at 20px 40%, #8f8fff 15%, #2929ff 95%);
 }
-/* line 160, ../components/sass/_tribe.scss */
+/* line 165, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead5 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #a3a3ff 15%, #4747ff 95%);
   background: radial-gradient(circle 28px at 20px 40%, #a3a3ff 15%, #4747ff 95%);
 }
-/* line 164, ../components/sass/_tribe.scss */
+/* line 169, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead5 .tribetitle {
   color: yellow;
 }
-/* line 170, ../components/sass/_tribe.scss */
+/* line 175, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead6 {
   background: #8600e8;
   -webkit-box-shadow: inset 0 0 2.5px #330059;
           box-shadow: inset 0 0 2.5px #330059;
 }
-/* line 173, ../components/sass/_tribe.scss */
+/* line 178, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead6 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #9b12ff 15%, #6300ab 95%);
   background: radial-gradient(circle 28px at 20px 40%, #9b12ff 15%, #6300ab 95%);
 }
-/* line 175, ../components/sass/_tribe.scss */
+/* line 180, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead6 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #a326ff 15%, #7400c9 95%);
   background: radial-gradient(circle 28px at 20px 40%, #a326ff 15%, #7400c9 95%);
 }
-/* line 179, ../components/sass/_tribe.scss */
+/* line 184, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead6 .tribetitle {
   color: #378200;
 }
 @media screen and (max-width: 520px) {
-  /* line 179, ../components/sass/_tribe.scss */
+  /* line 184, ../components/sass/_tribe.scss */
   .tribes .tribediv .tribehead6 .tribetitle {
     width: 75%;
   }
 }
-/* line 188, ../components/sass/_tribe.scss */
+/* line 193, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead7 {
   background: #e600e6;
   -webkit-box-shadow: inset 0 0 2.5px #570057;
           box-shadow: inset 0 0 2.5px #570057;
 }
-/* line 191, ../components/sass/_tribe.scss */
+/* line 196, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead7 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ff10ff 15%, #a900a9 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ff10ff 15%, #a900a9 95%);
 }
-/* line 193, ../components/sass/_tribe.scss */
+/* line 198, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead7 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ff24ff 15%, #c700c7 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ff24ff 15%, #c700c7 95%);
 }
-/* line 197, ../components/sass/_tribe.scss */
+/* line 202, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead7 .tribetitle {
   color: green;
 }
-/* line 203, ../components/sass/_tribe.scss */
+/* line 208, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead8 {
   background: gold;
   -webkit-box-shadow: inset 0 0 2.5px #d6b500;
           box-shadow: inset 0 0 2.5px #d6b500;
 }
-/* line 206, ../components/sass/_tribe.scss */
-.tribes .tribediv .tribehead8 .tribeorb8 {
+/* line 211, ../components/sass/_tribe.scss */
+.tribes .tribediv .tribehead8 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffed8f 15%, #ffdd29 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffed8f 15%, #ffdd29 95%);
 }
-/* line 208, ../components/sass/_tribe.scss */
-.tribes .tribediv .tribehead8 .tribeorb8:hover {
+/* line 213, ../components/sass/_tribe.scss */
+.tribes .tribediv .tribehead8 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #fff1a3 15%, #ffe247 95%);
   background: radial-gradient(circle 28px at 20px 40%, #fff1a3 15%, #ffe247 95%);
 }
-/* line 212, ../components/sass/_tribe.scss */
+/* line 217, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead8 .tribetitle8 {
   color: #0028ff;
 }
 @media screen and (max-width: 520px) {
-  /* line 212, ../components/sass/_tribe.scss */
+  /* line 217, ../components/sass/_tribe.scss */
   .tribes .tribediv .tribehead8 .tribetitle8 {
     width: 75%;
   }
 }
-/* line 221, ../components/sass/_tribe.scss */
+/* line 226, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead9 {
   background: #dadada;
   -webkit-box-shadow: inset 0 0 2.5px #acacac;
           box-shadow: inset 0 0 2.5px #acacac;
 }
-/* line 224, ../components/sass/_tribe.scss */
+/* line 229, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead9 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffffff 15%, #d4d4d4 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffffff 15%, #d4d4d4 95%);
 }
-/* line 226, ../components/sass/_tribe.scss */
+/* line 231, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead9 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffffff 15%, #e4e4e4 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffffff 15%, #e4e4e4 95%);
 }
-/* line 230, ../components/sass/_tribe.scss */
+/* line 235, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead9 .tribetitle {
   color: silver;
 }
-/* line 236, ../components/sass/_tribe.scss */
+/* line 241, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead10 {
   background: #2424ff;
   -webkit-box-shadow: inset 0 0 2.5px #000057;
           box-shadow: inset 0 0 2.5px #000057;
 }
-/* line 239, ../components/sass/_tribe.scss */
+/* line 244, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead10 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #4343ff 15%, #0000dc 95%);
   background: radial-gradient(circle 28px at 20px 40%, #4343ff 15%, #0000dc 95%);
 }
-/* line 241, ../components/sass/_tribe.scss */
+/* line 246, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead10 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #5757ff 15%, #0000fa 95%);
   background: radial-gradient(circle 28px at 20px 40%, #5757ff 15%, #0000fa 95%);
 }
-/* line 245, ../components/sass/_tribe.scss */
+/* line 250, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead10 .tribetitle {
   color: olive;
 }
-/* line 251, ../components/sass/_tribe.scss */
+/* line 256, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead11 {
   background: #b3b3b3;
   -webkit-box-shadow: inset 0 0 2.5px #6c6c6c;
           box-shadow: inset 0 0 2.5px #6c6c6c;
 }
-/* line 254, ../components/sass/_tribe.scss */
+/* line 259, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead11 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #c7c7c7 15%, #949494 95%);
   background: radial-gradient(circle 28px at 20px 40%, #c7c7c7 15%, #949494 95%);
 }
-/* line 256, ../components/sass/_tribe.scss */
+/* line 261, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead11 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #d2d2d2 15%, #a4a4a4 95%);
   background: radial-gradient(circle 28px at 20px 40%, #d2d2d2 15%, #a4a4a4 95%);
 }
-/* line 260, ../components/sass/_tribe.scss */
+/* line 265, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead11 .tribetitle {
   color: gray;
 }
-/* line 266, ../components/sass/_tribe.scss */
+/* line 271, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead12 {
   margin-bottom: 12px;
   background: white;
   -webkit-box-shadow: inset 0 0 3.5px #858585;
           box-shadow: inset 0 0 3.5px #858585;
 }
-/* line 270, ../components/sass/_tribe.scss */
+/* line 275, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead12 .tribeorb {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffffff 15%, #f5f5f5 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffffff 15%, #f5f5f5 95%);
 }
-/* line 272, ../components/sass/_tribe.scss */
+/* line 277, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead12 .tribeorb:hover {
   background: -webkit-radial-gradient(20px 40%, circle 28px, #ffffff 15%, #ffffff 95%);
   background: radial-gradient(circle 28px at 20px 40%, #ffffff 15%, #ffffff 95%);
 }
-/* line 276, ../components/sass/_tribe.scss */
+/* line 281, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead12 .tribetitle {
   color: #4d4d4d;
 }

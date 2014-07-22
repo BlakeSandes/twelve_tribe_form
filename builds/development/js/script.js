@@ -154,7 +154,13 @@ $("form.form").submit(function(evt) {
 $(".tribeList").hide();
 
 $(".tribediv").on("click", ".tribeorb", function() {
-  $(this).closest("div").next("ol").slideToggle();
+  
+  //When first .tribeorb clicked it slideToggles.
+  $(this).closest("div").next(".tribeList").slideToggle("fast")
+  
+  //When next header is clicked it slides down as previous header slides up.
+  .closest(".tribediv").siblings().find(".tribeList:visible").slideUp("fast");  
+   
 });
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
