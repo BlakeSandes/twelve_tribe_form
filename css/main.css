@@ -287,7 +287,7 @@ table {
 $inputLinear: linear-gradient(rgba(255, 255, 255,.90) 40%, rgba(255, 255, 255,.65) 60%);*/
 /*Tribe colors*/
 /* line 2, ../components/sass/_mixins.scss */
-nav ul button, nav ul button:focus, .form fieldset .signUpFooter .prev, .form fieldset .signUpFooter .next, .button, .login .firstFooter.signUpFooter .signupbtn, nav ul button:hover, .form fieldset:before, .button:hover, .tribes .tribediv .hiddenTribe li, .tribes .tribediv .tribehead1 .tribetitle, .tribes .tribediv .tribehead2 .tribetitle, .tribes .tribediv .tribehead3 .tribetitle, .tribes .tribediv .tribehead4 .tribetitle, .tribes .tribediv .tribehead5 .tribetitle, .tribes .tribediv .tribehead6 .tribetitle, .tribes .tribediv .tribehead7 .tribetitle, .tribes .tribediv .tribehead8 .tribetitle8, .tribes .tribediv .tribehead9 .tribetitle, .tribes .tribediv .tribehead10 .tribetitle, .tribes .tribediv .tribehead11 .tribetitle, .tribes .tribediv .tribehead12 .tribetitle {
+nav ul button, nav ul button:focus, .form fieldset .signUpFooter .prev, .form fieldset .signUpFooter .next, .button, .login .firstFooter.signUpFooter .signupbtn, nav ul button:hover, .form fieldset:before, .button:hover, .tribes .tribediv .tribeList li, .tribes .tribediv .tribehead1 .tribetitle, .tribes .tribediv .tribehead2 .tribetitle, .tribes .tribediv .tribehead3 .tribetitle, .tribes .tribediv .tribehead4 .tribetitle, .tribes .tribediv .tribehead5 .tribetitle, .tribes .tribediv .tribehead6 .tribetitle, .tribes .tribediv .tribehead7 .tribetitle, .tribes .tribediv .tribehead8 .tribetitle8, .tribes .tribediv .tribehead9 .tribetitle, .tribes .tribediv .tribehead10 .tribetitle, .tribes .tribediv .tribehead11 .tribetitle, .tribes .tribediv .tribehead12 .tribetitle {
   font-weight: bold;
   font-size: 1.13em;
   color: rgba(68, 110, 133, 0.95);
@@ -306,7 +306,7 @@ nav ul button, nav ul button:focus, .form fieldset .signUpFooter .prev, .form fi
 }
 
 /* line 35, ../components/sass/_mixins.scss */
-nav ul button:hover, nav ul button:hover:focus, .form fieldset .signUpFooter .prev:hover, .form fieldset .signUpFooter .next:hover, .button:hover, .login .firstFooter.signUpFooter .signupbtn:hover, nav ul button:focus, .form fieldset .signUpFooter .prev:focus, .form fieldset .signUpFooter .next:focus, .button:focus, .login .firstFooter.signUpFooter .signupbtn:focus, .tribes .tribediv .hiddenTribe li:hover {
+nav ul button:hover, nav ul button:hover:focus, .form fieldset .signUpFooter .prev:hover, .form fieldset .signUpFooter .next:hover, .button:hover, .login .firstFooter.signUpFooter .signupbtn:hover, nav ul button:focus, .form fieldset .signUpFooter .prev:focus, .form fieldset .signUpFooter .next:focus, .button:focus, .login .firstFooter.signUpFooter .signupbtn:focus, .tribes .tribediv .tribeList li:hover {
   cursor: pointer;
   background: radial-gradient(circle, rgba(94, 153, 184, 0.1), rgba(94, 153, 184, 0.2));
   background-color: #00feb4;
@@ -645,12 +645,13 @@ nav ul .tribetab {
   -moz-border-radius: 50%;
   border-radius: 50%;
   box-shadow: 0 0 1.5px rgba(136, 138, 137, 0.5);
+  /*transition: left 1s, color 1s ease-in-out, 1s;*/
 }
-/* line 37, ../components/sass/_tribe.scss */
+/* line 38, ../components/sass/_tribe.scss */
 .tribes .tribediv div span:first-child:hover {
   cursor: pointer;
 }
-/* line 43, ../components/sass/_tribe.scss */
+/* line 45, ../components/sass/_tribe.scss */
 .tribes .tribediv div span:last-child {
   float: right;
   width: 60%;
@@ -660,14 +661,17 @@ nav ul .tribetab {
 }
 /* line 58, ../components/sass/_tribe.scss */
 .tribes .tribediv .hiddenTribe {
+  display: none;
+}
+/* line 62, ../components/sass/_tribe.scss */
+.tribes .tribediv .tribeList {
   display: block;
   width: 40%;
   margin: 0 8% 12px 0;
   float: right;
 }
-/* line 65, ../components/sass/_tribe.scss */
-.tribes .tribediv .hiddenTribe li {
-  display: none;
+/* line 68, ../components/sass/_tribe.scss */
+.tribes .tribediv .tribeList li {
   width: 100%;
   height: 2.1em;
   margin: 0 auto;
@@ -676,229 +680,230 @@ nav ul .tribetab {
   text-align: center;
   color: rgba(47, 77, 93, 0.95);
 }
-/* line 80, ../components/sass/_tribe.scss */
-.tribes .tribediv .hiddenTribe li input[type=checkbox] {
+/* line 82, ../components/sass/_tribe.scss */
+.tribes .tribediv .tribeList li input[type=checkbox] {
   display: none;
 }
-/* line 83, ../components/sass/_tribe.scss */
-.tribes .tribediv .hiddenTribe li label {
+/* line 85, ../components/sass/_tribe.scss */
+.tribes .tribediv .tribeList li label {
   display: inline-block;
   margin: 0 auto;
   padding: 6px 0;
 }
-/* line 93, ../components/sass/_tribe.scss */
+/* line 95, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead1 {
   background: #ff6666;
   box-shadow: inset 0 0 2.5px #d60000;
 }
-/* line 96, ../components/sass/_tribe.scss */
+/* line 98, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead1 .tribeorb {
   background: radial-gradient(circle 28px at 20px 40%, #ff8f8f 15%, #ff2929 95%);
 }
-/* line 98, ../components/sass/_tribe.scss */
+/* line 100, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead1 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #ffa3a3 15%, #ff4747 95%);
 }
-/* line 102, ../components/sass/_tribe.scss */
+/* line 104, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead1 .tribetitle {
   color: cyan;
 }
-/* line 108, ../components/sass/_tribe.scss */
+/* line 110, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead2 {
   background: #ffc966;
   box-shadow: inset 0 0 2.5px #d68b00;
 }
-/* line 111, ../components/sass/_tribe.scss */
+/* line 113, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead2 .tribeorb {
   background: radial-gradient(circle 28px at 20px 40%, #ffd78f 15%, #ffac14 95%);
 }
-/* line 113, ../components/sass/_tribe.scss */
+/* line 115, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead2 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #ffdfa3 15%, #ffbe47 95%);
 }
-/* line 117, ../components/sass/_tribe.scss */
+/* line 119, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead2 .tribetitle {
   color: #005aff;
 }
-/* line 123, ../components/sass/_tribe.scss */
+/* line 125, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead3 {
-  background: #ffff99;
-  box-shadow: inset 0 0 2.5px #d6d600;
-}
-/* line 126, ../components/sass/_tribe.scss */
-.tribes .tribediv .tribehead3 .tribeorb {
-  background: radial-gradient(circle 28px at 20px 40%, #ffffc2 15%, #ffff29 95%);
+  background: #ffff3d;
+  box-shadow: inset 0 0 2.5px #c2c200;
 }
 /* line 128, ../components/sass/_tribe.scss */
-.tribes .tribediv .tribehead3 .tribeorb:hover {
-  background: radial-gradient(circle 28px at 20px 40%, #ffffa3 15%, #ffff47 95%);
+.tribes .tribediv .tribehead3 .tribeorb {
+  background: radial-gradient(circle 28px at 20px 40%, #ffffc2 15%, #f0f000 95%);
 }
-/* line 132, ../components/sass/_tribe.scss */
+/* line 130, ../components/sass/_tribe.scss */
+.tribes .tribediv .tribehead3 .tribeorb:hover {
+  background: radial-gradient(circle 28px at 20px 40%, #ffffd6 15%, #ffff33 95%);
+}
+/* line 134, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead3 .tribetitle {
   color: blue;
 }
-/* line 138, ../components/sass/_tribe.scss */
+/* line 140, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead4 {
   background: #00e600;
   box-shadow: inset 0 0 2.5px #005700;
 }
-/* line 141, ../components/sass/_tribe.scss */
+/* line 143, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead4 .tribeorb {
   background: radial-gradient(circle 28px at 20px 40%, #10ff10 15%, #00a900 95%);
 }
-/* line 143, ../components/sass/_tribe.scss */
+/* line 145, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead4 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #24ff24 15%, #00c700 95%);
 }
-/* line 147, ../components/sass/_tribe.scss */
+/* line 149, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead4 .tribetitle {
   color: purple;
 }
-/* line 153, ../components/sass/_tribe.scss */
+/* line 155, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead5 {
   background: #6666ff;
   box-shadow: inset 0 0 2.5px #0000d6;
 }
-/* line 156, ../components/sass/_tribe.scss */
+/* line 158, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead5 .tribeorb {
   background: radial-gradient(circle 28px at 20px 40%, #8f8fff 15%, #2929ff 95%);
 }
-/* line 158, ../components/sass/_tribe.scss */
+/* line 160, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead5 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #a3a3ff 15%, #4747ff 95%);
 }
-/* line 162, ../components/sass/_tribe.scss */
+/* line 164, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead5 .tribetitle {
   color: yellow;
 }
-/* line 168, ../components/sass/_tribe.scss */
+/* line 170, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead6 {
   background: #8600e8;
   box-shadow: inset 0 0 2.5px #330059;
 }
-/* line 171, ../components/sass/_tribe.scss */
+/* line 173, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead6 .tribeorb {
   background: radial-gradient(circle 28px at 20px 40%, #9b12ff 15%, #6300ab 95%);
 }
-/* line 173, ../components/sass/_tribe.scss */
+/* line 175, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead6 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #a326ff 15%, #7400c9 95%);
 }
-/* line 177, ../components/sass/_tribe.scss */
+/* line 179, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead6 .tribetitle {
   color: #378200;
 }
 @media screen and (max-width: 520px) {
-  /* line 177, ../components/sass/_tribe.scss */
+  /* line 179, ../components/sass/_tribe.scss */
   .tribes .tribediv .tribehead6 .tribetitle {
     width: 75%;
   }
 }
-/* line 186, ../components/sass/_tribe.scss */
+/* line 188, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead7 {
   background: #e600e6;
   box-shadow: inset 0 0 2.5px #570057;
 }
-/* line 189, ../components/sass/_tribe.scss */
+/* line 191, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead7 .tribeorb {
   background: radial-gradient(circle 28px at 20px 40%, #ff10ff 15%, #a900a9 95%);
 }
-/* line 191, ../components/sass/_tribe.scss */
+/* line 193, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead7 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #ff24ff 15%, #c700c7 95%);
 }
-/* line 195, ../components/sass/_tribe.scss */
+/* line 197, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead7 .tribetitle {
   color: green;
 }
-/* line 201, ../components/sass/_tribe.scss */
+/* line 203, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead8 {
   background: gold;
   box-shadow: inset 0 0 2.5px #d6b500;
 }
-/* line 204, ../components/sass/_tribe.scss */
+/* line 206, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead8 .tribeorb8 {
   background: radial-gradient(circle 28px at 20px 40%, #ffed8f 15%, #ffdd29 95%);
 }
-/* line 206, ../components/sass/_tribe.scss */
+/* line 208, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead8 .tribeorb8:hover {
   background: radial-gradient(circle 28px at 20px 40%, #fff1a3 15%, #ffe247 95%);
 }
-/* line 210, ../components/sass/_tribe.scss */
+/* line 212, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead8 .tribetitle8 {
   color: #0028ff;
 }
 @media screen and (max-width: 520px) {
-  /* line 210, ../components/sass/_tribe.scss */
+  /* line 212, ../components/sass/_tribe.scss */
   .tribes .tribediv .tribehead8 .tribetitle8 {
     width: 75%;
   }
 }
-/* line 219, ../components/sass/_tribe.scss */
+/* line 221, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead9 {
   background: #dadada;
   box-shadow: inset 0 0 2.5px #acacac;
 }
-/* line 222, ../components/sass/_tribe.scss */
+/* line 224, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead9 .tribeorb {
   background: radial-gradient(circle 28px at 20px 40%, #ffffff 15%, #d4d4d4 95%);
 }
-/* line 224, ../components/sass/_tribe.scss */
+/* line 226, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead9 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #ffffff 15%, #e4e4e4 95%);
 }
-/* line 228, ../components/sass/_tribe.scss */
+/* line 230, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead9 .tribetitle {
   color: silver;
 }
-/* line 234, ../components/sass/_tribe.scss */
+/* line 236, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead10 {
   background: #2424ff;
   box-shadow: inset 0 0 2.5px #000057;
 }
-/* line 237, ../components/sass/_tribe.scss */
+/* line 239, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead10 .tribeorb {
   background: radial-gradient(circle 28px at 20px 40%, #4343ff 15%, #0000dc 95%);
 }
-/* line 239, ../components/sass/_tribe.scss */
+/* line 241, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead10 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #5757ff 15%, #0000fa 95%);
 }
-/* line 243, ../components/sass/_tribe.scss */
+/* line 245, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead10 .tribetitle {
   color: olive;
 }
-/* line 249, ../components/sass/_tribe.scss */
+/* line 251, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead11 {
   background: #b3b3b3;
   box-shadow: inset 0 0 2.5px #6c6c6c;
 }
-/* line 252, ../components/sass/_tribe.scss */
+/* line 254, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead11 .tribeorb {
   background: radial-gradient(circle 28px at 20px 40%, #c7c7c7 15%, #949494 95%);
 }
-/* line 254, ../components/sass/_tribe.scss */
+/* line 256, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead11 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #d2d2d2 15%, #a4a4a4 95%);
 }
-/* line 258, ../components/sass/_tribe.scss */
+/* line 260, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead11 .tribetitle {
   color: gray;
 }
-/* line 264, ../components/sass/_tribe.scss */
+/* line 266, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead12 {
+  margin-bottom: 12px;
   background: white;
   box-shadow: inset 0 0 3.5px #858585;
 }
-/* line 267, ../components/sass/_tribe.scss */
+/* line 270, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead12 .tribeorb {
-  background: radial-gradient(circle 28px at 20px 40%, #ebebeb 15%, #ffffff 95%);
+  background: radial-gradient(circle 28px at 20px 40%, #ffffff 15%, #f5f5f5 95%);
 }
-/* line 269, ../components/sass/_tribe.scss */
+/* line 272, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead12 .tribeorb:hover {
   background: radial-gradient(circle 28px at 20px 40%, #ffffff 15%, #ffffff 95%);
 }
-/* line 273, ../components/sass/_tribe.scss */
+/* line 276, ../components/sass/_tribe.scss */
 .tribes .tribediv .tribehead12 .tribetitle {
   color: #4d4d4d;
 }

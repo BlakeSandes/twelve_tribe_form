@@ -151,6 +151,11 @@ $("form.form").submit(function(evt) {
 
 
 
+$(".tribeList").hide();
+
+$(".tribediv").on("click", ".tribeorb", function() {
+  $(this).closest("div").next("ol").slideToggle();
+});
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.1
