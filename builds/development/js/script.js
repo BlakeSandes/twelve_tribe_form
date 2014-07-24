@@ -151,7 +151,7 @@ $("form.form").submit(function(evt) {
 
 
 
-//$(".tribeList").hide();
+$(".tribeList").hide();
 
 $(".tribediv").on("click", ".tribeorb", function() {
   
