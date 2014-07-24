@@ -33,10 +33,10 @@ $("nav").on("click", "button", function(evt) {
   $("fieldset").prop("id", "hiddenField");
 
   //Get the title of the nav clicked.
-  var tabClicked = $(this).prop("title");
+  var tabClicked = $(this).attr("data");
 
   //Make the class of what we clicked not hidden.
-  $('fieldset[title='+tabClicked+']').prop("id", "");
+  $("fieldset[data=" +tabClicked+ "]").prop("id", "");
 
 });
 
