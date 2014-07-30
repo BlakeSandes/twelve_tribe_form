@@ -286,7 +286,7 @@ table {
 /*$buttonRadial: radial-gradient(circle, rgba(94,153,184,1), rgba(94,153,184,.5));
 $inputLinear: linear-gradient(rgba(255, 255, 255,.90) 40%, rgba(255, 255, 255,.65) 60%);*/
 /*Tribe colors*/
-/* line 2, ../components/sass/_mixins.scss */
+/* line 17, ../components/sass/_mixins.scss */
 nav ul button, nav ul button:focus, .form fieldset .signUpFooter .prev, .form fieldset .signUpFooter .next, .button, .login .firstFooter.signUpFooter .signupbtn, nav ul button:hover, .form fieldset:before, .button:hover, .tribes .tribediv .tribeList li, .tribes .tribediv .tribehead1 .tribetitle, .tribes .tribediv .tribehead2 .tribetitle, .tribes .tribediv .tribehead3 .tribetitle, .tribes .tribediv .tribehead4 .tribetitle, .tribes .tribediv .tribehead5 .tribetitle, .tribes .tribediv .tribehead6 .tribetitle, .tribes .tribediv .tribehead7 .tribetitle, .tribes .tribediv .tribehead8 .tribetitle8, .tribes .tribediv .tribehead9 .tribetitle, .tribes .tribediv .tribehead10 .tribetitle, .tribes .tribediv .tribehead11 .tribetitle, .tribes .tribediv .tribehead12 .tribetitle {
   font-weight: bold;
   font-size: 1.13em;
@@ -294,7 +294,7 @@ nav ul button, nav ul button:focus, .form fieldset .signUpFooter .prev, .form fi
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
 }
 
-/* line 9, ../components/sass/_mixins.scss */
+/* line 24, ../components/sass/_mixins.scss */
 nav ul button, nav ul button:focus, .form fieldset .signUpFooter .prev, .form fieldset .signUpFooter .next, .button, .login .firstFooter.signUpFooter .signupbtn {
   border: 0.98px solid rgba(255, 255, 255, 0.12);
   box-shadow: inset 0 0 4px rgba(94, 153, 184, 0.5), 0 0 1px 1.5px rgba(68, 110, 133, 0.95);
@@ -305,7 +305,7 @@ nav ul button, nav ul button:focus, .form fieldset .signUpFooter .prev, .form fi
   background-color: rgba(94, 153, 184, 0.45);
 }
 
-/* line 35, ../components/sass/_mixins.scss */
+/* line 50, ../components/sass/_mixins.scss */
 nav ul button:hover, nav ul button:hover:focus, .form fieldset .signUpFooter .prev:hover, .form fieldset .signUpFooter .next:hover, .button:hover, .login .firstFooter.signUpFooter .signupbtn:hover, nav ul button:focus, .form fieldset .signUpFooter .prev:focus, .form fieldset .signUpFooter .next:focus, .button:focus, .login .firstFooter.signUpFooter .signupbtn:focus, .tribes .tribediv .tribeList li:hover {
   cursor: pointer;
   background: radial-gradient(circle, rgba(94, 153, 184, 0.1), rgba(94, 153, 184, 0.2));
@@ -314,13 +314,13 @@ nav ul button:hover, nav ul button:hover:focus, .form fieldset .signUpFooter .pr
   color: rgba(82, 132, 160, 0.95);
 }
 
-/* line 44, ../components/sass/_mixins.scss */
+/* line 59, ../components/sass/_mixins.scss */
 nav ul button:focus, .form fieldset .signUpFooter .prev:focus, .form fieldset .signUpFooter .next:focus, .button:focus, .login .firstFooter.signUpFooter .signupbtn:focus, .login .loginOptions input:focus, .login .signUpOptions input:focus, .gender textarea:focus {
   outline: none;
   box-shadow: 0px 0px 6px rgba(2, 247, 49, 0.75), inset 0px 0px 6px rgba(103, 255, 39, 0.75);
 }
 
-/* line 50, ../components/sass/_mixins.scss */
+/* line 65, ../components/sass/_mixins.scss */
 .login .loginOptions input, .login .signUpOptions input {
   color: rgba(62, 35, 76, 0.85);
   background: linear-gradient(rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.65) 60%);
@@ -330,17 +330,17 @@ nav ul button:focus, .form fieldset .signUpFooter .prev:focus, .form fieldset .s
   box-shadow: 0.5px 0.5px 1.5px rgba(94, 153, 184, 0.75), -0.5px -0.5px 1.5px rgba(94, 153, 184, 0.75);
 }
 
-/* line 14, ../components/sass/_base.scss */
+/* line 3, ../components/sass/_base.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 18, ../components/sass/_base.scss */
+/* line 7, ../components/sass/_base.scss */
 form * {
   background: transparent;
 }
 
-/* line 22, ../components/sass/_base.scss */
+/* line 11, ../components/sass/_base.scss */
 html {
   background: -webkit-linear-gradient(rgba(217, 235, 255, 0.75), rgba(138, 145, 158, 0.75));
   background: -o-linear-gradient(rgba(217, 235, 255, 0.75), rgba(138, 145, 158, 0.75));
@@ -349,7 +349,7 @@ html {
 }
 
 /*============CLEAR DEFAULT INPUT STYLES============*/
-/* line 33, ../components/sass/_base.scss */
+/* line 22, ../components/sass/_base.scss */
 input[type=text], input[type=email], input[type=password],
 input[type=url], input[type=tel],
 textarea, button, select {
@@ -373,7 +373,7 @@ nav ul {
 /* line 11, ../components/sass/_tab.scss */
 nav ul button {
   list-style: none;
-  width: 84px;
+  width: 80px;
   display: inline-block;
   text-align: center;
   margin: 0 5px;

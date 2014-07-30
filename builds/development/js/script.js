@@ -1,4 +1,37 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+var $;
+
+$ = require('jquery');
+
+
+
+
+
+//CREATES EXPANDING TEXTAREA//////////////////////
+
+  var txt = $('#comments'), 
+    hiddenDiv = $(document.createElement('div')),
+    content = null;
+
+  txt.addClass('txtstuff');
+  hiddenDiv.addClass('hiddendiv common');
+
+  $('.gender').append(hiddenDiv);
+
+  txt.on('keyup', function() {
+    content = $(this).val();
+
+    content = content.replace(/\n/g, '<br>');
+    hiddenDiv.html(content + '<br class="lbr">');
+
+    $(this).css('height', hiddenDiv.height());
+  });
+
+//////////////////////////////////////////////////
+
+
+
+
 var $; 
 
 $ = require('jquery');
@@ -21,10 +54,18 @@ $(".signupbtn").on("click", function() {
 
 
 
-var $;
 
-$ = require('jquery');
+$(".tribeList").hide();
 
+$(".tribediv").on("click", ".tribeorb", function() {
+  
+  //When first .tribeorb clicked it slideToggles.
+  $(this).closest("div").next(".tribeList").slideToggle("fast")
+  
+  //When next header is clicked it slides down as previous header slides up.
+  .closest(".tribediv").siblings().find(".tribeList:visible").slideUp("fast");  
+   
+});
 
 
 ////////////When tab clicked////////////
@@ -121,47 +162,6 @@ $("form.form").submit(function(evt) {
 
 
 
-
-
-
-
-//CREATES EXPANDING TEXTAREA//////////////////////
-
-  var txt = $('#comments'), 
-    hiddenDiv = $(document.createElement('div')),
-    content = null;
-
-  txt.addClass('txtstuff');
-  hiddenDiv.addClass('hiddendiv common');
-
-  $('.gender').append(hiddenDiv);
-
-  txt.on('keyup', function() {
-    content = $(this).val();
-
-    content = content.replace(/\n/g, '<br>');
-    hiddenDiv.html(content + '<br class="lbr">');
-
-    $(this).css('height', hiddenDiv.height());
-  });
-
-//////////////////////////////////////////////////
-
-
-
-
-
-$(".tribeList").hide();
-
-$(".tribediv").on("click", ".tribeorb", function() {
-  
-  //When first .tribeorb clicked it slideToggles.
-  $(this).closest("div").next(".tribeList").slideToggle("fast")
-  
-  //When next header is clicked it slides down as previous header slides up.
-  .closest(".tribediv").siblings().find(".tribeList:visible").slideUp("fast");  
-   
-});
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.1
